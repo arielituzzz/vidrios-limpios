@@ -1,0 +1,17 @@
+@import "../../../assets/index.scss";
+
+.contacts {
+  margin: 0;
+  background-color: $red;
+  display: flex;
+  justify-content: center;
+  // min-height: 50px;
+  height: 40px;
+  &__content {
+    color: wheat;
+    // box-sizing: border-box;
+    // border: 1px solid black;
+    width: 60%;
+    margin: 0;
+  }
+}
