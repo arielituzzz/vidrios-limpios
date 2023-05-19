@@ -1,0 +1,24 @@
+@import "../../../../assets/index.scss";
+
+.menuBurger {
+  background-color: $blueLight;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__options {
+    color: white;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border-top: 1px solid white;
+    width: 95%;
+    text-decoration: none;
+    padding: 10px 0px;
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .menuBurger {
+    display: none;
+  }
+}

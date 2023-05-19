@@ -4,14 +4,28 @@
   margin: 0;
   background-color: $red;
   display: flex;
-  justify-content: center;
-  // min-height: 50px;
-  height: 40px;
-  &__content {
-    color: wheat;
-    // box-sizing: border-box;
-    // border: 1px solid black;
-    width: 60%;
-    margin: 0;
+  flex-direction: column;
+  color: white;
+  padding: 3px;
+  &__row1 {
+    display: flex;
+    justify-content: space-around;
+    &__text {
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      &__img {
+        fill: white;
+      }
+    }
+  }
+  &__row2 {
+    display: flex;
+    justify-content: space-evenly;
+    &__text {
+      margin: 0;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
   }
 }
