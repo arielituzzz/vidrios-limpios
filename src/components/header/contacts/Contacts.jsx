@@ -1,5 +1,6 @@
 import React from "react";
 import "./_contacts.scss";
+import { Contact } from "../../../assets/data";
 import iconMail from "../../../assets/imgs/icons/envelope-regular.svg";
 import iconPhone from "../../../assets/imgs/icons/phone-solid.svg";
 import iconWhatsapp from "../../../assets/imgs/icons/whatsapp.svg";
@@ -21,10 +22,7 @@ const Contacts = () => {
           <img src={iconMail} alt="iconMail" width={13} />{" "}
           info@vidrioslimpios.com.ar
         </p>
-        <a
-          href="https://www.facebook.com/VidriosLimpiosOficial/"
-          className="contacts__row1__text"
-        >
+        <a href={Contact.facebook} className="contacts__row1__text">
           <img src={iconFacebook} alt="iconFacebook" width={10} />
         </a>
       </div>

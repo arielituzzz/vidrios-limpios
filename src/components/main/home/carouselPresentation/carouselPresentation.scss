@@ -1,0 +1,42 @@
+.carouselPresentation {
+  &__body {
+    &__container {
+      &__img {
+        width: 800px;
+      }
+      &__texts h5 {
+        font-size: 2.3rem;
+        font-weight: 600;
+      }
+      &__texts p {
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.3rem;
+      }
+    }
+  }
+}
+
+/* DESKTOP························································································································ */
+@media (min-width: 1024px) {
+  .carouselPresentation {
+    &__body {
+      &__container {
+        &__img {
+          width: 100vw;
+        }
+        &__texts {
+          position: absolute;
+          top: 35%;
+        }
+        &__texts h5 {
+          font-size: 4.5rem;
+        }
+        &__texts p {
+          font-size: 2.5rem;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}
