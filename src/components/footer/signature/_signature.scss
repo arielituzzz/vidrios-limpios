@@ -1,0 +1,26 @@
+.signature {
+  color: white;
+  text-align: center;
+  &__copyright {
+    border-top: 1px solid rgba(white, 0.2);
+    padding: 5px 0px;
+    &__mailLink {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px black;
+    }
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .signature {
+    display: flex;
+    justify-content: center;
+    &__copyright {
+      width: 60%;
+      font-size: 0.8rem;
+    }
+  }
+}
