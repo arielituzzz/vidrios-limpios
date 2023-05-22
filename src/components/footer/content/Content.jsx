@@ -25,23 +25,23 @@ const Content = () => {
         </section>
         <section className="content__container__section2">
           <h3 className="content__container__section2__title">Servicios</h3>
-          <div className="content__container__section2__options">
-            <h4 className="content__container__section2__options__text">
+          <ul className="content__container__section2__options">
+            <li className="content__container__section2__options__text">
               Limpieza de Vidrios
-            </h4>
-            <h4 className="content__container__section2__options__text">
+            </li>
+            <li className="content__container__section2__options__text">
               Limpieza de Oficinas
-            </h4>
-            <h4 className="content__container__section2__options__text">
+            </li>
+            <li className="content__container__section2__options__text">
               Finales de Obra
-            </h4>
-            <h4 className="content__container__section2__options__text">
+            </li>
+            <li className="content__container__section2__options__text">
               Limpieza en Altura
-            </h4>
-            <h4 className="content__container__section2__options__text">
+            </li>
+            <li className="content__container__section2__options__text">
               Limpieza de Consorcios
-            </h4>
-          </div>
+            </li>
+          </ul>
         </section>
         <section className="content__container__section3">
           <h3 className="content__container__section3__title">Contactenos</h3>
