@@ -41,8 +41,8 @@ const CarouselPresentation = () => {
           <div className="carousel-caption d-md-block carouselPresentation__body__container__texts">
             <h5>SERVICIOS DE VIDRIOS EN ALTURA</h5>
             <p>
-              Equipos de profesionales espacializadosen la limpieza de todo tipo
-              de superficies en altura.
+              Equipos de profesionales especializados en la limpieza de todo
+              tipo de superficies en altura.
             </p>
             <button type="button" className="btn btn-outline-light">
               <a

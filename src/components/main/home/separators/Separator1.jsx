@@ -1,7 +1,7 @@
 import React from "react";
 import "./separators.scss";
-import iconWhatsapp from "../../../../../assets/imgs/icons/whatsapp.svg";
-import { Contact } from "../../../../../assets/data";
+import iconWhatsapp from "../../../../assets/imgs/icons/whatsapp.svg";
+import { Contact } from "../../../../assets/data";
 
 const Separator1 = () => {
   return (
