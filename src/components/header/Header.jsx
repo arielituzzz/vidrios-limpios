@@ -15,7 +15,7 @@ const Header = () => {
     <div className="header">
       <Contacts />
       <Navbar handleVisibility={handleVisibility} />
-      {menuBurgerVisible && <BurgerMenu />}
+      {menuBurgerVisible && <BurgerMenu handleVisibility={handleVisibility} />}
     </div>
   );
 };

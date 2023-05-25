@@ -1,6 +1,6 @@
 import React from "react";
 import "./carouselPresentation.scss";
-import img1 from "../../../../assets/imgs/oldSite/img1BigCarousel.jpeg";
+import img1 from "../../../../assets/imgs/img1BigCarousel.jpeg";
 import { Contact } from "../../../../assets/data";
 
 const CarouselPresentation = () => {

@@ -6,22 +6,27 @@ import iconMail from "../../../assets/imgs/icons/envelope-regular.svg";
 import iconLocation from "../../../assets/imgs/icons/location.svg";
 import iconTelemarketer from "../../../assets/imgs/icons/telemarketer.svg";
 import logo from "../../../assets/imgs/logo.png";
+import { Contact } from "../../../assets/data";
 
 const Content = () => {
   return (
     <div className="content">
       <div className="content__container">
         <section className="content__container__section1">
-          <img
-            src={iconFacebook}
-            alt="iconFacebook"
-            className="content__container__section1__imgFacebook"
-          />
-          <img
-            src={iconWhatsapp}
-            alt="iconWhatsapp"
-            className="content__container__section1__imgWhatsapp"
-          />
+          <a href={Contact.facebook} rel="noreferrer" target="_blank">
+            <img
+              src={iconFacebook}
+              alt="iconFacebook"
+              className="content__container__section1__imgFacebook"
+            />
+          </a>
+          <a href={Contact.whatsApp} rel="noreferrer" target="_blank">
+            <img
+              src={iconWhatsapp}
+              alt="iconWhatsapp"
+              className="content__container__section1__imgWhatsapp"
+            />
+          </a>
         </section>
         <section className="content__container__section2">
           <h3 className="content__container__section2__title">Servicios</h3>
@@ -54,25 +59,31 @@ const Content = () => {
             Servicios en todo el pais.
           </p>
           <div className="content__container__section3__numbers">
-            <p className="content__container__section3__numbers__text">
+            <a
+              href={Contact.whatsApp}
+              className="content__container__section3__numbers__text"
+            >
               <img
                 src={iconTelemarketer}
                 alt="iconTelemarketer"
                 className="content__container__section3__numbers__text__icon"
               />{" "}
               15.5461.5971
-            </p>
-            <p className="content__container__section3__numbers__text">
+            </a>
+            <a
+              href={Contact.whatsApp2}
+              className="content__container__section3__numbers__text"
+            >
               <img
                 src={iconTelemarketer}
                 alt="iconTelemarketer"
                 className="content__container__section3__numbers__text__icon"
               />{" "}
               11.5767.4230
-            </p>
+            </a>
           </div>
           <a
-            href="mailto:info@vidrioslimpios.com.ar"
+            href={`mailto:${Contact.mail}`}
             className="content__container__section3__mail"
           >
             <img
