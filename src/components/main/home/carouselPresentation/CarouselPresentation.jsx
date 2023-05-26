@@ -8,6 +8,7 @@ const CarouselPresentation = () => {
     <div
       id="carouselExampleCaptions"
       className="carousel slide carouselPresentation"
+      data-bs-ride="carousel"
     >
       {/* <div className="carousel-indicators">
         <button
@@ -44,7 +45,10 @@ const CarouselPresentation = () => {
               Equipos de profesionales especializados en la limpieza de todo
               tipo de superficies en altura.
             </p>
-            <button type="button" className="btn btn-outline-light">
+            <button
+              type="button"
+              className="btn btn-outline-light carouselPresentation__body__container__button"
+            >
               <a
                 href={Contact.whatsApp}
                 target="_blank"
@@ -69,7 +73,10 @@ const CarouselPresentation = () => {
               amplia experiencia dispuestos a colaborar para brindarle
               soluciones practicas a esta problematica que se presenta.
             </p>
-            <button type="button" className="btn btn-outline-light">
+            <button
+              type="button"
+              className="btn btn-outline-light carouselPresentation__body__container__button"
+            >
               <a
                 href={Contact.whatsApp}
                 target="_blank"

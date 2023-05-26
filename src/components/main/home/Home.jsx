@@ -7,6 +7,7 @@ import Separator1 from "./separators/Separator1";
 import Services from "./services/Services";
 import About from "./about/About";
 import Separator2 from "./separators/Separator2";
+import CarouselMarks from "./carouselMarks/CarouselMarks";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Services />
       <About />
       <Separator2 />
+      <CarouselMarks />
       <Contact />
     </div>
   );

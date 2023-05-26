@@ -13,6 +13,13 @@
         font-weight: 500;
         line-height: 1.3rem;
       }
+      &__button:hover {
+        background-color: transparent;
+        border: 1px solid black;
+      }
+      &__button:hover a {
+        color: black !important;
+      }
     }
   }
 }
