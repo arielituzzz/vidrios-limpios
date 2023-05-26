@@ -16,7 +16,7 @@ const Contacts = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <img src={iconWhatsapp} alt="iconWhatsapp" width={13} /> 15.5461.5971
+          <img src={iconWhatsapp} alt="iconWhatsapp" width={13} /> 15.5461-5971
         </a>
         <a
           href={Contact.whatsApp2}
@@ -24,7 +24,7 @@ const Contacts = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <img src={iconPhone} alt="iconPhone" width={13} /> 11.5767.4230
+          <img src={iconPhone} alt="iconPhone" width={13} /> 11.5767-4230
         </a>
       </div>
       <div className="contacts__row2">

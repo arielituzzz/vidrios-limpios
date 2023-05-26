@@ -6,6 +6,7 @@ import Cards from "./cards/Cards";
 import Separator1 from "./separators/Separator1";
 import Services from "./services/Services";
 import About from "./about/About";
+import Separator2 from "./separators/Separator2";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Separator1 />
       <Services />
       <About />
+      <Separator2 />
       <Contact />
     </div>
   );

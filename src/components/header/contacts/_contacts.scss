@@ -20,6 +20,9 @@
         fill: white;
       }
     }
+    &__text:hover {
+      color: $blueLight;
+    }
   }
   &__row2 {
     display: flex;
@@ -30,6 +33,9 @@
       font-weight: 600;
       text-decoration: none;
       color: white;
+    }
+    &__text:hover {
+      color: $blueLight;
     }
   }
 }
