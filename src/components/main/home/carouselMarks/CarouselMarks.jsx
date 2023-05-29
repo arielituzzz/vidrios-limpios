@@ -1,6 +1,6 @@
 import React from "react";
 import "./_carouselMarks.scss";
-import { MarksData } from "../../../../assets/cards";
+import { MarksData } from "../../../../assets/generators";
 import config from "../../../../config/config";
 
 const CarouselMarks = () => {

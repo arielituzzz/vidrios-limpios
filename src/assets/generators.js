@@ -71,3 +71,8 @@ export const MarksData = [
   { title: "REMAX", img: "/marks/remax.jpg" },
   { title: "NOGOYA", img: "/marks/nogoya.jpg" },
 ];
+
+export const MenuData = [
+  { title: "LIMPIEZA EN ALTURA", link: "/limpieza-en-altura" },
+  { title: "CONTACTO", link: "/" },
+];

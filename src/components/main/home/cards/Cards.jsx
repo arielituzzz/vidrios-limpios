@@ -1,6 +1,6 @@
 import React from "react";
 import "./_cards.scss";
-import { CardsData } from "../../../../assets/cards";
+import { CardsData } from "../../../../assets/generators";
 import Card from "./card/Card";
 
 const Cards = () => {

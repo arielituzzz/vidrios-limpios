@@ -1,0 +1,36 @@
+@import "../../../../assets/index.scss";
+
+.teams {
+  color: $darkBlue;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  &__content {
+    &__title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    &__text {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .teams {
+    padding: 50px 0px;
+    &__content {
+      width: 60%;
+      &__title {
+        font-size: 2rem;
+      }
+      &__text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

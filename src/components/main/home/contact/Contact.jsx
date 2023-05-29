@@ -1,7 +1,9 @@
 import React, { useRef, useState } from "react";
 import "./_contact.scss";
+import { Validator } from "../../../../assets/validator";
+import { Contact } from "../../../../assets/data";
 
-const Contact = () => {
+const ContactUs = () => {
   const nameRef = useRef(null);
   const telRef = useRef(null);
   const emailRef = useRef(null);
@@ -9,44 +11,42 @@ const Contact = () => {
 
   const [dialog, setDialog] = useState(" ");
 
-  const sendMail = () => {
+  const sendMail = (e) => {
+    e.preventDefault();
+
+    const form = document.getElementById("form-contact");
+
     const name = nameRef.current.value;
     const tel = telRef.current.value;
     const email = emailRef.current.value;
     const message = messageRef.current.value;
 
-    const validator = () => {
-      const forbiddenWords = ["<", ">", "/", "</>", "<script>", "</script>"];
+    const validator = Validator(name, tel, email, message);
 
-      const inputs = [name, tel, email, message];
+    if (validator === true) {
+      return setDialog("Operacion no Permitida!");
+    } else {
+      setDialog("");
 
-      const hasForbiddenWord = inputs.some((str) => {
-        return forbiddenWords.some((word) => {
-          return str.includes(word);
-        });
-      });
+      const mail = {
+        attachment: `Consulta por servicios (Email: ${email} - Telefono: ${tel})`,
+        to: `${Contact.mail}`,
+        body: `${name} desea contactarse!\n\nMensaje: ${message}`,
+      };
 
-      if (!name || !tel || !email || !message) return true;
+      const link = `mailto:${mail.to}?subject=${encodeURIComponent(
+        mail.attachment
+      )}&body=${encodeURIComponent(mail.body)}`;
 
-      return hasForbiddenWord;
-    };
+      form.reset();
 
-    validator() === true ? setDialog("Operacion no Permitida!") : setDialog("");
-
-    const attachment = `Consulta por servicios (Email: ${email} - Telefono: ${tel})`;
-    const to = "info@vidrioslimpios.com.ar";
-    const body = `${name} desea contactarse!\n\nMensaje: ${message}`;
-
-    const link = `mailto:${to}?subject=${encodeURIComponent(
-      attachment
-    )}&body=${encodeURIComponent(body)}`;
-
-    if (validator() === false) return (window.location.href = link);
+      return (window.location.href = link);
+    }
   };
 
   return (
-    <div className="contact">
-      <form className="contact__content">
+    <div className="contact" onSubmit={sendMail}>
+      <form id="form-contact" className="contact__content">
         <h3 className="contact__content__title">Contáctese con nosotros</h3>
         <p className="contact__content__text">
           Puede escribirnos directametne a info@vidrioslimpios.com.ar Atención
@@ -63,20 +63,23 @@ const Contact = () => {
             placeholder="Nombre *"
             required
             ref={nameRef}
+            autoComplete="on"
           />
           <input
-            id="name"
+            id="telephone"
             type="text"
             placeholder="Telefono *"
             required
             ref={telRef}
+            autoComplete="on"
           />
           <input
-            id="name"
+            id="email"
             type="email"
             placeholder="Email *"
             required
             ref={emailRef}
+            autoComplete="on"
           />
         </div>
         <div className="contact__content__row2">
@@ -86,13 +89,13 @@ const Contact = () => {
             rows={6}
             required
             ref={messageRef}
+            autoComplete="on"
           ></textarea>
         </div>
         <div className="contact__content__row3">
           <button
             type="submit"
             className="btn btn-primary contact__content__row3__btn"
-            onClick={sendMail}
           >
             Enviar Mensaje
           </button>
@@ -103,4 +106,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUs;
