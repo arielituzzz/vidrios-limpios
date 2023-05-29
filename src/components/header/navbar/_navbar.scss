@@ -42,6 +42,9 @@
         font-size: 1rem;
         font-weight: 600;
       }
+      &__links a:hover {
+        color: $blueLightLight;
+      }
     }
   }
 }
@@ -50,47 +53,8 @@
 // }
 
 /* TABLET························································································································ */
-// @media (min-width: 768px) {
-//   .navbar {
-//     margin: 0;
-//     background-color: $blueLight;
-//     display: flex;
-//     justify-content: center;
-//     min-height: 50px;
-//     height: 90px;
-//     &__content {
-//       color: wheat;
-//       width: 60%;
-//       margin: 0px;
-//       display: flex;
-//       justify-content: space-between;
-//       align-items: center;
-//       &__logo {
-//         vertical-align: middle;
-//         &__img {
-//           width: 240px;
-//           height: auto;
-//         }
-//       }
-//       &__menu {
-//         width: 70%;
-//         display: flex;
-//         justify-content: flex-end;
-//         align-items: center;
-//         &__links {
-//           display: flex;
-//           column-gap: 40px;
-//         }
-//         &__links a {
-//           color: wheat;
-//           text-decoration: none;
-//           font-size: 1rem;
-//           font-weight: 600;
-//         }
-//       }
-//     }
-//   }
-// }
+@media (min-width: 768px) {
+}
 
 /* DESKTOP ······················································································································· */
 @media (min-width: 1024px) {

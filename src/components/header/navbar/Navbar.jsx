@@ -28,7 +28,7 @@ const Navbar = ({ handleVisibility }) => {
             <img src={logo} alt="logo" className="navbar__content__logo__img" />
           </Link>
         </div>
-        <div className="navbar__content__menu">
+        <div id="menu-burger" className="navbar__content__menu">
           <div className="navbar__content__menu__links">
             {MenuData.map((item, index) => {
               return (
@@ -41,8 +41,6 @@ const Navbar = ({ handleVisibility }) => {
                 </NavLink>
               );
             })}
-            {/* <NavLink to="/limpieza-en-altura">LIMPIEZA EN ALTURA</NavLink>
-            <Link to="/">CONTACTO</Link> */}
           </div>
         </div>
       </div>

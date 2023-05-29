@@ -1,6 +1,7 @@
 import React from "react";
 import "./carouselPresentation.scss";
-import img1 from "../../../../assets/imgs/img1BigCarousel.jpeg";
+import img1 from "../../../../assets/imgs/img1BigCarousel.png";
+import img2 from "../../../../assets/imgs/img2BigCarousel.jpg";
 import { Contact } from "../../../../assets/data";
 
 const CarouselPresentation = () => {
@@ -62,7 +63,7 @@ const CarouselPresentation = () => {
         </div>
         <div className="carousel-item carouselPresentation__body__container">
           <img
-            src={img1}
+            src={img2}
             className="d-block carouselPresentation__body__container__img"
             alt="imgHightRiseCleaning"
           />

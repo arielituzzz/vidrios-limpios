@@ -74,5 +74,6 @@ export const MarksData = [
 
 export const MenuData = [
   { title: "LIMPIEZA EN ALTURA", link: "/limpieza-en-altura" },
+  { title: "DISTRIBUIDORA THAMES", link: "/distribuidora-thames" },
   { title: "CONTACTO", link: "/" },
 ];

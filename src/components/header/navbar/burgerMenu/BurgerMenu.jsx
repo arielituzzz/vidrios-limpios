@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./_burgerMenu.scss";
 import { NavLink } from "react-router-dom";
+import { MenuData } from "../../../../assets/generators";
 
 const BurgerMenu = ({ handleVisibility }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,18 +12,18 @@ const BurgerMenu = ({ handleVisibility }) => {
   };
 
   return (
-    <div className="menuBurger">
-      <NavLink
-        className="menuBurger__options"
-        to="/limpieza-en-altura"
-        onClick={toggleMenu}
-      >
-        LIMPIEZA EN ALTURA
-      </NavLink>
-      <NavLink className="menuBurger__options" to="/" onClick={toggleMenu}>
-        CONTACTO
-      </NavLink>
-    </div>
+    <form className="menuBurger" onSubmit={toggleMenu}>
+      {MenuData.map((item, index) => (
+        <NavLink
+          className="menuBurger__options"
+          key={index}
+          to={item.link}
+          onClick={toggleMenu}
+        >
+          {item.title}
+        </NavLink>
+      ))}
+    </form>
   );
 };
 

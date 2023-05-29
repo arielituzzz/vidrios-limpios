@@ -1,0 +1,65 @@
+@import "../../../../assets/index.scss";
+
+.presentationThames {
+  margin: 50px 10px;
+  &__content {
+    &__title {
+      text-align: center;
+      color: $blueLight;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    &__title img {
+      width: 80%;
+    }
+    &__text {
+      font-size: 1rem;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+    &__links h5 {
+      text-align: center;
+      color: $blueLight;
+      font-weight: 600;
+    }
+    &__links a {
+      text-decoration: none;
+    }
+    &__links a p {
+      color: $darkBlue;
+      font-size: 1rem;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .presentationThames {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    &__content {
+      width: 60%;
+      &__title {
+        font-size: 2.5rem;
+      }
+      &__title img {
+        width: 50%;
+      }
+      &__text {
+        font-size: 1.3rem;
+        color: $darkBlue;
+        line-height: 2.5rem;
+        margin-bottom: 50px;
+      }
+      &__links h5 {
+        font-size: 2rem;
+      }
+      &__links a p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
