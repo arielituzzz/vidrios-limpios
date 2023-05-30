@@ -73,8 +73,11 @@ export const MarksData = [
 ];
 
 export const MenuData = [
-  { title: "LIMPIEZA EN ALTURA", link: "/limpieza-en-altura" },
-  { title: "DISTRIBUIDORA THAMES", link: "/distribuidora-thames" },
+  { title: "SERVICIOS DE ALTURA", link: "/servicios-de-altura" },
+  {
+    title: "DISTRIBUIDOR OFICIAL 'CASA THAMES'",
+    link: "/distribuidor-thames",
+  },
   { title: "CONTACTO", link: "/" },
 ];
 
@@ -84,7 +87,7 @@ export const ServicesData = [
   { name: "Finales de Obra" },
   { name: "Limpieza en Altura" },
   { name: "Limpieza de Consorcios" },
-  { name: "Distribuidora 'CASA THAMES'" },
+  { name: "Distribuidor Oficial 'CASA THAMES'" },
 ];
 
 export const SpecialServicesData = [

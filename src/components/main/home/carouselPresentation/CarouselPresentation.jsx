@@ -2,7 +2,8 @@ import React from "react";
 import "./carouselPresentation.scss";
 import img1 from "../../../../assets/imgs/img1BigCarousel.png";
 import img2 from "../../../../assets/imgs/img2BigCarousel.jpg";
-import { Contact } from "../../../../assets/data";
+// import { Contact } from "../../../../assets/data";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const CarouselPresentation = () => {
   return (
@@ -46,19 +47,25 @@ const CarouselPresentation = () => {
               Equipos de profesionales especializados en la limpieza de todo
               tipo de superficies en altura.
             </p>
-            <button
-              type="button"
-              className="btn btn-outline-light carouselPresentation__body__container__button"
+            <Link
+              to="/servicios-de-altura"
+              className="text-decoration-none text-white"
             >
-              <a
+              <button
+                type="button"
+                className="btn btn-outline-light carouselPresentation__body__container__button"
+              >
+                {/* <a
                 href={Contact.whatsApp}
                 target="_blank"
                 rel="noreferrer"
                 className="text-decoration-none text-white"
               >
                 MAS INFORMACION
-              </a>
-            </button>
+              </a> */}
+                MAS INFORMACION
+              </button>
+            </Link>
           </div>
         </div>
         <div className="carousel-item carouselPresentation__body__container">
@@ -74,19 +81,25 @@ const CarouselPresentation = () => {
               amplia experiencia dispuestos a colaborar para brindarle
               soluciones practicas a esta problematica que se presenta.
             </p>
-            <button
-              type="button"
-              className="btn btn-outline-light carouselPresentation__body__container__button"
+            <Link
+              to="/servicios-de-altura"
+              className="text-decoration-none text-white"
             >
-              <a
+              <button
+                type="button"
+                className="btn btn-outline-light carouselPresentation__body__container__button"
+              >
+                MAS INFORMACION
+                {/* <a
                 href={Contact.whatsApp}
                 target="_blank"
                 rel="noreferrer"
                 className="text-decoration-none text-white"
-              >
+                >
                 MAS INFORMACION
-              </a>
-            </button>
+              </a> */}
+              </button>
+            </Link>
           </div>
         </div>
         {/* <div className="carousel-item">

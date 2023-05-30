@@ -103,8 +103,8 @@ const Content = () => {
             className="content__container__section4__logo"
           />
           <p className="content__container__section4__text">
-            Servicios profesionales de limpieza. Más de 15 años de experiencia
-            nos avalan. Abonos mensuales, bimestrales, trimestrales con precios
+            Servicios profesionales de limpieza. Nos avala la experiencia desde
+            el año 2003. Abonos mensuales, bimestrales, trimestrales con precios
             acordados por escrito. Seriedad, puntualidad y eficiencia.
           </p>
         </section>

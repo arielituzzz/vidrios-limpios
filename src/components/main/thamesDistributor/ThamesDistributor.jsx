@@ -7,7 +7,10 @@ import PresentationThames from "./presentation/PresentationThames";
 const ThamesDistributor = () => {
   return (
     <div>
-      <HeaderAux title="Distribuidora Thames" background={imgBackground} />
+      <HeaderAux
+        title="Distribuidora Oficial 'CASA THAMES'"
+        background={imgBackground}
+      />
       <PresentationThames />
     </div>
   );

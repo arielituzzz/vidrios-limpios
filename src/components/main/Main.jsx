@@ -9,8 +9,8 @@ const Main = () => {
   return (
     <div className="main">
       <Route exact path="/" component={Home} />
-      <Route exact path="/limpieza-en-altura" component={HightRiseCleaning} />
-      <Route exact path="/distribuidora-thames" component={ThamesDistributor} />
+      <Route exact path="/servicios-de-altura" component={HightRiseCleaning} />
+      <Route exact path="/distribuidor-thames" component={ThamesDistributor} />
     </div>
   );
 };
