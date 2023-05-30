@@ -1,7 +1,7 @@
 import React from "react";
 import "./separators.scss";
 import iconWhatsapp from "../../../../assets/imgs/icons/whatsapp.svg";
-import { Contact } from "../../../../assets/data";
+import { Contact, telephone1 } from "../../../../assets/data";
 
 const Separator1 = () => {
   return (
@@ -16,7 +16,12 @@ const Separator1 = () => {
         </div>
         <div className="separator1__content__row2">
           <p className="separator1__content__row2__text1">
-            Consúltenos directamente 11 5461 5971
+            Consúltenos directamente{" "}
+            {telephone1.slice(0, 2) +
+              " " +
+              telephone1.slice(2, 6) +
+              " " +
+              telephone1.slice(6)}
           </p>
           <p className="separator1__content__row2__text2">
             Envíenos sus imágenes junto con su consulta por Whatsapp y lo

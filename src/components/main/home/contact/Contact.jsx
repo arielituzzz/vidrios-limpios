@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./_contact.scss";
 import { Validator } from "../../../../assets/validator";
-import { Contact } from "../../../../assets/data";
+import { Contact, telephone1 } from "../../../../assets/data";
 
 const ContactUs = () => {
   const nameRef = useRef(null);
@@ -53,7 +53,12 @@ const ContactUs = () => {
           telefónica: 11.5461-5971 De lunes a viernes de 9 a 18hs. y sábados de
           9 a 12hs.
           <span>
-            Presupuestos online en 24 horas por Whatsapp al 11.5461-5971
+            Presupuestos online en 24 horas por Whatsapp al{" "}
+            {telephone1.slice(0, 2) +
+              "-" +
+              telephone1.slice(2, 6) +
+              "-" +
+              telephone1.slice(6)}
           </span>
         </p>
         <div className="contact__content__row1">

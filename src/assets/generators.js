@@ -77,3 +77,22 @@ export const MenuData = [
   { title: "DISTRIBUIDORA THAMES", link: "/distribuidora-thames" },
   { title: "CONTACTO", link: "/" },
 ];
+
+export const ServicesData = [
+  { name: "Limpieza de Vidrios" },
+  { name: "Limpieza de Oficinas" },
+  { name: "Finales de Obra" },
+  { name: "Limpieza en Altura" },
+  { name: "Limpieza de Consorcios" },
+  { name: "Distribuidora 'CASA THAMES'" },
+];
+
+export const SpecialServicesData = [
+  { name: "Pintura" },
+  { name: "Sellados" },
+  { name: "Impermeabilizaciones" },
+  { name: "Hidrolavados" },
+  { name: "Instalacion equipos AA" },
+  { name: "Vidrios" },
+  { name: "Albañilería" },
+];
