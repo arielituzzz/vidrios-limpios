@@ -1,6 +1,8 @@
 import React from "react";
 import "./_presentationThames.scss";
 import logoThames from "../../../../assets/imgs/thamesImg.gif";
+import { Contact, telephone1 } from "../../../../assets/data";
+import iconWhatsApp from "../../../../assets/imgs/icons/whatsappMain.png";
 
 const PresentationThames = () => {
   return (
@@ -44,7 +46,17 @@ const PresentationThames = () => {
           mercado.
         </p>
         <div className="presentationThames__content__links">
-          <h5>Visitenos!</h5>
+          <a href={Contact.whatsApp} rel="noreferrer" target="_blank">
+            PEDIDOS Y CONSULTAS AL{" "}
+          </a>
+          <a href={Contact.whatsApp} rel="noreferrer" target="_blank">
+            <img src={iconWhatsApp} alt="imgWhatsapp" />{" "}
+            {telephone1.slice(0, 2) +
+              "-" +
+              telephone1.slice(2, 6) +
+              "-" +
+              telephone1.slice(6)}
+          </a>
           <a
             href="https://www.casathames.com/herramientas-de-limpieza/vidrios-altura/ "
             rel="noreferrer"

@@ -17,17 +17,24 @@
       text-align: justify;
       margin-bottom: 30px;
     }
-    &__links h5 {
-      text-align: center;
-      color: $blueLight;
-      font-weight: 600;
+    &__links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     &__links a {
       text-decoration: none;
+      text-align: center;
+      color: $blueLight;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    &__links a img {
+      width: 30px;
     }
     &__links a p {
       color: $darkBlue;
-      font-size: 1rem;
+      font-size: 0.8rem;
       text-align: center;
       font-weight: 600;
     }
@@ -54,8 +61,12 @@
         line-height: 2.5rem;
         margin-bottom: 50px;
       }
-      &__links h5 {
+      &__links a {
         font-size: 2rem;
+        text-align: center;
+      }
+      &__links a img {
+        width: 50px;
       }
       &__links a p {
         font-size: 1.3rem;
