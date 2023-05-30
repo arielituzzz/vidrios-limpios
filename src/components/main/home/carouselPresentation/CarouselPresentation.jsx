@@ -75,7 +75,7 @@ const CarouselPresentation = () => {
             alt="imgHightRiseCleaning"
           />
           <div className="carousel-caption d-md-block carouselPresentation__body__container__texts">
-            <h5>SERVICIOS DE SEGURIDAD EN ALTURA</h5>
+            <h5>SERVICIOS DE ALTURA</h5>
             <p>
               Poseemos un excelente equipo de Profesionales certificados y de
               amplia experiencia dispuestos a colaborar para brindarle

@@ -16,7 +16,7 @@ const Contacts = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <img src={iconWhatsapp} alt="iconWhatsapp" width={13} />{" "}
+          <img src={iconWhatsapp} alt="iconWhatsapp" width={13} />
           {telephone1.slice(0, 2) + "-" + telephone1.slice(2)}
         </a>
         <a
@@ -25,13 +25,13 @@ const Contacts = () => {
           rel="noreferrer"
           target="_blank"
         >
-          <img src={iconPhone} alt="iconPhone" width={13} />{" "}
+          <img src={iconPhone} alt="iconPhone" width={13} />
           {telephone2.slice(0, 2) + "-" + telephone2.slice(2)}
         </a>
       </div>
       <div className="contacts__row2">
         <a href={`mailto:${Contact.mail}`} className="contacts__row2__text">
-          <img src={iconMail} alt="iconMail" width={13} />{" "}
+          <img src={iconMail} alt="iconMail" width={13} />
           info@vidrioslimpios.com.ar
         </a>
         <a
