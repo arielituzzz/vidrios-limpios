@@ -18,37 +18,7 @@ const CarouselMarks = () => {
           data-bs-ride="carousel"
         >
           <div className="carousel-inner carouselMarks__content__slider__container">
-            <div className="carousel-item active" data-bs-interval="5000">
-              {/* {MarksData.map((mark) => {
-                if (MarksData.indexOf(mark) === 0) {
-                  return (
-                    <div
-                      className="carousel-item active col"
-                      key={MarksData.indexOf(mark)}
-                    >
-                      <img
-                        src={config.imagenBase + mark.img}
-                        className="text-white text-center carouselMarks__content__slider__container__imgs__img"
-                        alt={mark.title}
-                      />
-                    </div>
-                  );
-                } else {
-                  return (
-                    <div
-                      className="carousel-item col-1"
-                      key={MarksData.indexOf(mark)}
-                    >
-                      <img
-                        src={config.imagenBase + mark.img}
-                        className="text-white text-center carouselMarks__content__slider__container__imgs__img"
-                        alt={mark.title}
-                      />
-                    </div>
-                  );
-                }
-              })} */}
-
+            <div className="carousel-item active" data-bs-interval="4000">
               <div className="row row-md-1 carouselMarks__content__slider__container__imgs">
                 {MarksData.map(
                   (mark) =>
@@ -64,7 +34,7 @@ const CarouselMarks = () => {
                 )}
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="5000">
+            <div className="carousel-item" data-bs-interval="4000">
               <div className="row row-md-1 carouselMarks__content__slider__container__imgs">
                 {MarksData.map(
                   (mark) =>
@@ -81,7 +51,7 @@ const CarouselMarks = () => {
                 )}
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="5000">
+            <div className="carousel-item" data-bs-interval="4000">
               <div className="row row-md-1 carouselMarks__content__slider__container__imgs">
                 {MarksData.map(
                   (mark) =>
@@ -98,7 +68,7 @@ const CarouselMarks = () => {
                 )}
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="5000">
+            <div className="carousel-item" data-bs-interval="4000">
               <div className="row row-md-1 carouselMarks__content__slider__container__imgs">
                 {MarksData.map(
                   (mark) =>
@@ -115,7 +85,7 @@ const CarouselMarks = () => {
                 )}
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="5000">
+            <div className="carousel-item" data-bs-interval="4000">
               <div className="row row-md-1 carouselMarks__content__slider__container__imgs">
                 {MarksData.map(
                   (mark) =>
@@ -132,7 +102,7 @@ const CarouselMarks = () => {
                 )}
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="5000">
+            <div className="carousel-item" data-bs-interval="4000">
               <div className="row row-md-1 carouselMarks__content__slider__container__imgs">
                 {MarksData.map(
                   (mark) =>
@@ -149,7 +119,7 @@ const CarouselMarks = () => {
                 )}
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="5000">
+            <div className="carousel-item" data-bs-interval="4000">
               <div className="row row-md-1 carouselMarks__content__slider__container__imgs">
                 {MarksData.map(
                   (mark) =>
@@ -166,7 +136,7 @@ const CarouselMarks = () => {
                 )}
               </div>
             </div>
-            <div className="carousel-item" data-bs-interval="5000">
+            <div className="carousel-item" data-bs-interval="4000">
               <div className="row row-md-1 carouselMarks__content__slider__container__imgs">
                 {MarksData.map(
                   (mark) =>

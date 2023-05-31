@@ -99,3 +99,33 @@ export const SpecialServicesData = [
   { name: "Vidrios" },
   { name: "Albañilería" },
 ];
+
+export const ClientsData = [
+  { name: "TRAVEL RENT A CAR: www.travelrentacar.com.ar" },
+  { name: "CENTRY S.A.: www.centry.com.ar" },
+  { name: "EMBAJADA DE LA REPUBLICA DE SUDAFRICA" },
+  { name: "GRUPO D’Arc Citroen y Peugeot" },
+  { name: "BREMEN MOTORS" },
+  { name: "NISSAN TAIKKI" },
+  { name: "HOTEL GRAND KING" },
+  { name: "LONCO HUE MERCEDES BENZ" },
+  { name: "CLINICA NOGOYA" },
+  { name: "CERVECERIA HORMIGA NEGRA SUC MORENO" },
+  { name: "MUCHO +QUE PADEL BENAVIDEZ" },
+  { name: "ACCESS MEDICAL S.A." },
+  { name: "PORTAL MAESTRO LOMAS DE ZAMORA" },
+  { name: "INVAGRO SRL" },
+  { name: "REMAX SUC INCAS CABA" },
+  { name: "ESCUELA JACARANDA" },
+  { name: "IVECO TORTUGUITAS" },
+  { name: "GRUPO IDEA" },
+  { name: "MAYNAR VW" },
+  { name: "RADIO VICTORIA S.A." },
+  {
+    name: `BARRIOS PRIVADOS: LOS TALAS (CANING), ISLA DEL SOL (TIGRE),
+  PUERTOS DEL LAGO ( ESCOBAR), MIRALAGOS, SANTA BARBARA, EL MOLINO,
+  ENTRE OTROS DE ZONA NORTE, SUR Y OESTE.`,
+  },
+  { name: "CONSORCIOS EN CABA Y GRAN BS AS." },
+  { name: "CIUDAD DE CORDOBA Y ALREDEDORES." },
+];

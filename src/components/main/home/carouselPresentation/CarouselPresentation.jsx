@@ -2,7 +2,6 @@ import React from "react";
 import "./carouselPresentation.scss";
 import img1 from "../../../../assets/imgs/img1BigCarousel.png";
 import img2 from "../../../../assets/imgs/img2BigCarousel.jpg";
-// import { Contact } from "../../../../assets/data";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const CarouselPresentation = () => {
@@ -12,28 +11,6 @@ const CarouselPresentation = () => {
       className="carousel slide carouselPresentation"
       data-bs-ride="carousel"
     >
-      {/* <div className="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          className="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-      </div> */}
       <div className="carousel-inner carouselPresentation__body">
         <div className="carousel-item active carouselPresentation__body__container">
           <img
@@ -55,14 +32,6 @@ const CarouselPresentation = () => {
                 type="button"
                 className="btn btn-outline-light carouselPresentation__body__container__button"
               >
-                {/* <a
-                href={Contact.whatsApp}
-                target="_blank"
-                rel="noreferrer"
-                className="text-decoration-none text-white"
-              >
-                MAS INFORMACION
-              </a> */}
                 MAS INFORMACION
               </button>
             </Link>
@@ -90,25 +59,10 @@ const CarouselPresentation = () => {
                 className="btn btn-outline-light carouselPresentation__body__container__button"
               >
                 MAS INFORMACION
-                {/* <a
-                href={Contact.whatsApp}
-                target="_blank"
-                rel="noreferrer"
-                className="text-decoration-none text-white"
-                >
-                MAS INFORMACION
-              </a> */}
               </button>
             </Link>
           </div>
         </div>
-        {/* <div className="carousel-item">
-          <img src="..." className="d-block w-100" alt="..." />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div> */}
       </div>
       <button
         className="carousel-control-prev"

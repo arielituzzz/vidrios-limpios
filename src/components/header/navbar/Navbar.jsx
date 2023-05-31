@@ -32,11 +32,7 @@ const Navbar = ({ handleVisibility }) => {
           <div className="navbar__content__menu__links">
             {MenuData.map((item, index) => {
               return (
-                <NavLink
-                  to={item.link}
-                  key={index}
-                  activeClassName="linkActive"
-                >
+                <NavLink to={item.link} key={index}>
                   {item.title}
                 </NavLink>
               );

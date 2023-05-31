@@ -1,5 +1,6 @@
 import React from "react";
 import "./_clientsHightRiseCleaning.scss";
+import { ClientsData } from "../../../../assets/generators";
 
 const ClientsHightRiseCleaning = () => {
   return (
@@ -13,37 +14,21 @@ const ClientsHightRiseCleaning = () => {
         </div>
         <div className="clientsHightRiseCleaning__content__row2">
           <ul className="clientsHightRiseCleaning__content__row2__list">
-            <li>TRAVEL RENT A CAR: www.travelrentacar.com.ar</li>
-            <li>CENTRY S.A.: www.centry.com.ar</li>
-            <li>EMBAJADA DE LA REPUBLICA DE SUDAFRICA</li>
-            <li>GRUPO D’Arc Citroen y Peugeot</li>
-            <li>BREMEN MOTORS</li>
-            <li>NISSAN TAIKKI</li>
-            <li>HOTEL GRAND KING</li>
-            <li>LONCO HUE MERCEDES BENZ</li>
+            {ClientsData.map(
+              (item, index) => index <= 7 && <li key={index}>{item.name}</li>
+            )}
           </ul>
           <ul className="clientsHightRiseCleaning__content__row2__list">
-            <li>CLINICA NOGOYA</li>
-            <li>CERVECERIA HORMIGA NEGRA SUC MORENO</li>
-            <li>MUCHO +QUE PADEL BENAVIDEZ</li>
-            <li>ACCESS MEDICAL S.A.</li>
-            <li>PORTAL MAESTRO LOMAS DE ZAMORA</li>
-            <li>INVAGRO SRL</li>
-            <li>REMAX SUC INCAS CABA</li>
-            <li>ESCUELA JACARANDA</li>
+            {ClientsData.map(
+              (item, index) =>
+                index > 7 && index <= 15 && <li key={index}>{item.name}</li>
+            )}
           </ul>
           <ul className="clientsHightRiseCleaning__content__row2__list">
-            <li>IVECO TORTUGUITAS</li>
-            <li>GRUPO IDEA</li>
-            <li>MAYNAR VW</li>
-            <li>RADIO VICTORIA S.A.</li>
-            <li>
-              BARRIOS PRIVADOS: LOS TALAS (CANING), ISLA DEL SOL (TIGRE),
-              PUERTOS DEL LAGO ( ESCOBAR), MIRALAGOS, SANTA BARBARA, EL MOLINO,
-              ENTRE OTROS DE ZONA NORTE, SUR Y OESTE.
-            </li>
-            <li>CONSORCIOS EN CABA Y GRAN BS AS.</li>
-            <li>CIUDAD DE CORDOBA Y ALREDEDORES.</li>
+            {ClientsData.map(
+              (item, index) =>
+                index > 15 && index <= 23 && <li key={index}>{item.name}</li>
+            )}
           </ul>
         </div>
       </div>
