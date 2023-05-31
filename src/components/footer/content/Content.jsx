@@ -6,42 +6,41 @@ import iconMail from "../../../assets/imgs/icons/envelope-regular.svg";
 import iconLocation from "../../../assets/imgs/icons/location.svg";
 import iconTelemarketer from "../../../assets/imgs/icons/telemarketer.svg";
 import logo from "../../../assets/imgs/logo.png";
+import { Contact, telephone1, telephone2 } from "../../../assets/data";
+import { ServicesData } from "../../../assets/generators";
 
 const Content = () => {
   return (
     <div className="content">
       <div className="content__container">
         <section className="content__container__section1">
-          <img
-            src={iconFacebook}
-            alt="iconFacebook"
-            className="content__container__section1__imgFacebook"
-          />
-          <img
-            src={iconWhatsapp}
-            alt="iconWhatsapp"
-            className="content__container__section1__imgWhatsapp"
-          />
+          <a href={Contact.facebook} rel="noreferrer" target="_blank">
+            <img
+              src={iconFacebook}
+              alt="iconFacebook"
+              className="content__container__section1__imgFacebook"
+            />
+          </a>
+          <a href={Contact.whatsApp} rel="noreferrer" target="_blank">
+            <img
+              src={iconWhatsapp}
+              alt="iconWhatsapp"
+              className="content__container__section1__imgWhatsapp"
+            />
+          </a>
         </section>
         <section className="content__container__section2">
           <h3 className="content__container__section2__title">Servicios</h3>
-          <div className="content__container__section2__options">
-            <h4 className="content__container__section2__options__text">
-              Limpieza de Vidrios
-            </h4>
-            <h4 className="content__container__section2__options__text">
-              Limpieza de Oficinas
-            </h4>
-            <h4 className="content__container__section2__options__text">
-              Finales de Obra
-            </h4>
-            <h4 className="content__container__section2__options__text">
-              Limpieza en Altura
-            </h4>
-            <h4 className="content__container__section2__options__text">
-              Limpieza de Consorcios
-            </h4>
-          </div>
+          <ul className="content__container__section2__options">
+            {ServicesData.map((item, index) => (
+              <li
+                className="content__container__section2__options__text"
+                key={index}
+              >
+                {item.name}
+              </li>
+            ))}
+          </ul>
         </section>
         <section className="content__container__section3">
           <h3 className="content__container__section3__title">Contactenos</h3>
@@ -54,25 +53,39 @@ const Content = () => {
             Servicios en todo el pais.
           </p>
           <div className="content__container__section3__numbers">
-            <p className="content__container__section3__numbers__text">
+            <a
+              href={Contact.whatsApp}
+              className="content__container__section3__numbers__text"
+            >
               <img
                 src={iconTelemarketer}
                 alt="iconTelemarketer"
                 className="content__container__section3__numbers__text__icon"
               />{" "}
-              15.5461.5971
-            </p>
-            <p className="content__container__section3__numbers__text">
+              {telephone1.slice(0, 2) +
+                "-" +
+                telephone1.slice(2, 6) +
+                "-" +
+                telephone1.slice(6)}
+            </a>
+            <a
+              href={Contact.whatsApp2}
+              className="content__container__section3__numbers__text"
+            >
               <img
                 src={iconTelemarketer}
                 alt="iconTelemarketer"
                 className="content__container__section3__numbers__text__icon"
               />{" "}
-              11.5767.4230
-            </p>
+              {telephone2.slice(0, 2) +
+                "-" +
+                telephone2.slice(2, 6) +
+                "-" +
+                telephone2.slice(6)}
+            </a>
           </div>
           <a
-            href="mailto:info@vidrioslimpios.com.ar"
+            href={`mailto:${Contact.mail}`}
             className="content__container__section3__mail"
           >
             <img
@@ -90,8 +103,8 @@ const Content = () => {
             className="content__container__section4__logo"
           />
           <p className="content__container__section4__text">
-            Servicios profesionales de limpieza. Más de 15 años de experiencia
-            nos avalan. Abonos mensuales, bimestrales, trimestrales con precios
+            Servicios profesionales de limpieza. Nos avala la experiencia desde
+            el año 2003. Abonos mensuales, bimestrales, trimestrales con precios
             acordados por escrito. Seriedad, puntualidad y eficiencia.
           </p>
         </section>

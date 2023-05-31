@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./_navbar.scss";
 import logo from "../../../assets/imgs/logo.png";
 import burgerBotton from "../../../assets/imgs/icons/burger-menu.svg";
+import { MenuData } from "../../../assets/generators";
 
 const Navbar = ({ handleVisibility }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,10 +28,15 @@ const Navbar = ({ handleVisibility }) => {
             <img src={logo} alt="logo" className="navbar__content__logo__img" />
           </Link>
         </div>
-        <div className="navbar__content__menu">
+        <div id="menu-burger" className="navbar__content__menu">
           <div className="navbar__content__menu__links">
-            <NavLink to="/limpieza-en-altura">LIMPIEZA EN ALTURA</NavLink>
-            <Link to="/">CONTACTO</Link>
+            {MenuData.map((item, index) => {
+              return (
+                <NavLink to={item.link} key={index}>
+                  {item.title}
+                </NavLink>
+              );
+            })}
           </div>
         </div>
       </div>

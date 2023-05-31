@@ -1,11 +1,23 @@
 import React from "react";
 import "./_home.scss";
-import Contact from "./contact/Contact";
+import ContactUs from "./contact/Contact";
+import CarouselPresentation from "./carouselPresentation/CarouselPresentation";
+import Cards from "./cards/Cards";
+import Separator1 from "./separators/Separator1";
+import About from "./about/About";
+import Separator2 from "./separators/Separator2";
+import CarouselMarks from "./carouselMarks/CarouselMarks";
 
 const Home = () => {
   return (
-    <div>
-      <Contact />
+    <div className="home">
+      <CarouselPresentation />
+      <Cards />
+      <Separator1 />
+      <About />
+      <Separator2 />
+      <CarouselMarks />
+      <ContactUs />
     </div>
   );
 };

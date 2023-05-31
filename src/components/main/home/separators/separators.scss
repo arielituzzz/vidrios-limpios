@@ -1,0 +1,97 @@
+@import "../../../../assets/index.scss";
+
+.separator1 {
+  background-color: $blueLight;
+  padding: 50px 40px;
+  color: white;
+  &__content {
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__row1 {
+      border: 1px solid white;
+      border-radius: 100px;
+      padding: 15px;
+      &__icon {
+        width: 20px;
+      }
+    }
+    &__row2 {
+      margin-top: 15px;
+      &__text1 {
+        margin: 0;
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: 200;
+      }
+      &__text2 {
+        margin: 0;
+        font-size: 1.1rem;
+        text-align: center;
+        font-weight: 300;
+      }
+    }
+
+    &__row3 {
+      margin-top: 20px;
+      &__btn {
+        padding: 10px 20px;
+      }
+      &__btn:hover {
+        background-color: rgb(101, 209, 101);
+        border: 1px solid rgb(101, 209, 101);
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.separator2 {
+  background-color: $blueLight;
+  color: white;
+  padding: 50px 15px;
+  &__content {
+    &__text {
+      font-size: 2rem;
+      text-align: center;
+      font-style: italic;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      line-height: 40px;
+    }
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .separator1 {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    &__content {
+      width: 60%;
+      flex-direction: row;
+      justify-content: space-between;
+      &__row1 {
+      }
+      &__row2 {
+        &__text1 {
+          text-align: start;
+        }
+        &__text2 {
+          text-align: start;
+        }
+      }
+    }
+  }
+
+  .separator2 {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    &__content {
+      width: 60%;
+    }
+  }
+}

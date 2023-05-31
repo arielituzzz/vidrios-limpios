@@ -1,0 +1,50 @@
+@import "../../../../assets/index.scss";
+
+.clientsHightRiseCleaning {
+  padding: 50px 10px;
+  &__content {
+    &__row1 {
+      &__title {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $darkBlue;
+        margin-bottom: 20px;
+      }
+    }
+    &__row2 {
+      &__list {
+        font-size: 0.9rem;
+      }
+      &__list li {
+        color: black;
+      }
+    }
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .clientsHightRiseCleaning {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    &__content {
+      width: 60%;
+      &__row1 {
+        &__title {
+          font-size: 1.8rem;
+          margin-bottom: 40px;
+        }
+      }
+      &__row2 {
+        display: flex;
+        justify-content: space-around;
+        &__list {
+          width: 33%;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}

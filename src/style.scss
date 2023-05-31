@@ -13,3 +13,15 @@ body {
   padding: 0%;
 }
 /**********************************************/
+
+.app {
+  &__whatsapp {
+    z-index: 999;
+    position: fixed;
+    right: 5vw;
+    bottom: 10vh;
+    &__icon {
+      width: 60px;
+    }
+  }
+}

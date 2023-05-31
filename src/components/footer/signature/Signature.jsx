@@ -12,6 +12,7 @@ const Signature = () => {
         >
           SU-DEV SOLUTIONS
         </a>
+        <p>Version 1.0.0</p>
       </div>
     </div>
   );

@@ -1,0 +1,53 @@
+.carouselMarks {
+  &__content {
+    padding: 70px 20px;
+    &__title {
+      margin-bottom: 50px;
+      &__text {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+    &__slider {
+      &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        &__imgs {
+          &__img {
+            width: 150px;
+            height: 150px;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* DESKTOP························································································································ */
+@media (min-width: 1024px) {
+  .carouselMarks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__content {
+      width: 70%;
+      &__title {
+        &__text {
+          font-size: 2.3rem;
+        }
+      }
+      &__slider {
+        &__container {
+          &__imgs {
+            &__img {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

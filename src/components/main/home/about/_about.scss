@@ -1,0 +1,74 @@
+@import "../../../../assets/index.scss";
+
+.about {
+  &__content {
+    padding: 0px 15px 50px;
+    &__row1 {
+      padding: 50px 0px;
+      &__img {
+        width: 100%;
+      }
+    }
+    &__row2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__title {
+        color: $blueLight;
+        font-size: 1.8rem;
+        font-weight: 600;
+        width: 100%;
+        text-align: start;
+        margin-bottom: 30px;
+      }
+      &__text1 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: $grey;
+      }
+      &__text2 {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      &__btn {
+        background-color: $blueLight;
+        padding: 10px 20px;
+      }
+      &__btn:hover {
+        background-color: transparent;
+      }
+      &__btn:hover a {
+        color: $blueLight !important;
+      }
+    }
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
+    &__content {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: self-start;
+      width: 60%;
+      column-gap: 30px;
+      padding: 0;
+      &__row1 {
+        padding: 0;
+        &__img {
+          width: 370px;
+        }
+      }
+      &__row2 {
+        align-items: flex-start;
+        &__title {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
