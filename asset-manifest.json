@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9df9de1b.css",
+    "main.js": "/static/js/main.1ce9d9ec.js",
+    "static/js/787.f53ff0d6.chunk.js": "/static/js/787.f53ff0d6.chunk.js",
+    "static/media/distribuidora-thames.png": "/static/media/distribuidora-thames.a156a7ae8843622a06a9.png",
+    "static/media/img1BigCarousel.png": "/static/media/img1BigCarousel.3c575c84934ffa28142d.png",
+    "static/media/limpieza_de_vidrios_en_altura.png": "/static/media/limpieza_de_vidrios_en_altura.0bcc4e6e1662af998dc2.png",
+    "static/media/img2BigCarousel.jpg": "/static/media/img2BigCarousel.2cb48e5c9e87e474ebe4.jpg",
+    "static/media/whatsappMain.png": "/static/media/whatsappMain.253865880bf4db39ad29.png",
+    "static/media/logo.png": "/static/media/logo.188d6f29ecb9c9625ad9.png",
+    "index.html": "/index.html",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.32b03aeb6b888388cf5c2a1d3a11de1a.svg",
+    "static/media/telemarketer.svg": "/static/media/telemarketer.a6b3b23d3d2ded5b360100506966113f.svg",
+    "static/media/envelope-regular.svg": "/static/media/envelope-regular.2284fd67f57d12b9f1bbbecafa7c3f28.svg",
+    "static/media/phone-solid.svg": "/static/media/phone-solid.e855b9ff2d5ee33597e199019a4ced27.svg",
+    "static/media/burger-menu.svg": "/static/media/burger-menu.a69183d61b154d3d371f8ddfc7bfb325.svg",
+    "static/media/facebook-f.svg": "/static/media/facebook-f.6c41d5ff32da508237ab5f6493d7def6.svg",
+    "static/media/check.svg": "/static/media/check.8ee2257388062d79888d.svg",
+    "static/media/location.svg": "/static/media/location.2baaf41f45e8014ac0ba92e828846c5e.svg",
+    "main.9df9de1b.css.map": "/static/css/main.9df9de1b.css.map",
+    "main.1ce9d9ec.js.map": "/static/js/main.1ce9d9ec.js.map",
+    "787.f53ff0d6.chunk.js.map": "/static/js/787.f53ff0d6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9df9de1b.css",
+    "static/js/main.1ce9d9ec.js"
+  ]
+}
