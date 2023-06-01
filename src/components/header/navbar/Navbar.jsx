@@ -24,7 +24,7 @@ const Navbar = ({ handleVisibility }) => {
             className="navbar__content__botton"
             onClick={toggleMenu}
           />
-          <Link to="/">
+          <Link to="/#top">
             <img src={logo} alt="logo" className="navbar__content__logo__img" />
           </Link>
         </div>

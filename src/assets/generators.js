@@ -17,7 +17,7 @@ export const CardsData = [
   },
   {
     img: "/casaThames.webp",
-    title: 'Distribuidora "CASA THAMES"',
+    title: 'Distribuidor Oficial "CASA THAMES"',
     description:
       "CONSULTE VENTA MAYORISTA DE PRODUCTOS, EQUIPOS E INSUMOS NACIONALES E IMPORTADOR: SOMOS DISTRIBUIDORES OFICIALES DE CASA THAMES",
     link: `${Contact.whatsApp}`,
@@ -73,12 +73,15 @@ export const MarksData = [
 ];
 
 export const MenuData = [
-  { title: "SERVICIOS DE ALTURA", link: "/servicios-de-altura" },
+  {
+    title: "SERVICIOS DE ALTURA",
+    link: "/servicios-de-altura#top",
+  },
   {
     title: "DISTRIBUIDOR OFICIAL 'CASA THAMES'",
-    link: "/distribuidor-thames",
+    link: "/distribuidor-thames#top",
   },
-  { title: "CONTACTO", link: "/" },
+  { title: "CONTACTO", link: "/#form-contact" },
 ];
 
 export const ServicesData = [

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 const CarouselPresentation = () => {
   return (
     <div
-      id="carouselExampleCaptions"
+      id="carousel"
       className="carousel slide carouselPresentation"
       data-bs-ride="carousel"
     >
@@ -67,7 +67,7 @@ const CarouselPresentation = () => {
       <button
         className="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleCaptions"
+        data-bs-target="#carousel"
         data-bs-slide="prev"
       >
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -76,7 +76,7 @@ const CarouselPresentation = () => {
       <button
         className="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleCaptions"
+        data-bs-target="#carousel"
         data-bs-slide="next"
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
