@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.99a47d5c.css",
-    "main.js": "/static/js/main.387372c9.js",
+    "main.js": "/static/js/main.b933c3f5.js",
     "static/js/787.f53ff0d6.chunk.js": "/static/js/787.f53ff0d6.chunk.js",
     "static/media/distribuidora-thames.png": "/static/media/distribuidora-thames.a156a7ae8843622a06a9.png",
     "static/media/img1BigCarousel.png": "/static/media/img1BigCarousel.3c575c84934ffa28142d.png",
@@ -19,11 +19,11 @@
     "static/media/check.svg": "/static/media/check.8ee2257388062d79888d.svg",
     "static/media/location.svg": "/static/media/location.2baaf41f45e8014ac0ba92e828846c5e.svg",
     "main.99a47d5c.css.map": "/static/css/main.99a47d5c.css.map",
-    "main.387372c9.js.map": "/static/js/main.387372c9.js.map",
+    "main.b933c3f5.js.map": "/static/js/main.b933c3f5.js.map",
     "787.f53ff0d6.chunk.js.map": "/static/js/787.f53ff0d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99a47d5c.css",
-    "static/js/main.387372c9.js"
+    "static/js/main.b933c3f5.js"
   ]
 }
