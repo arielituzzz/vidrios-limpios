@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.vidrioslimpios.com.ar/
+Sitemap: https://www.vidrioslimpios.ar/
