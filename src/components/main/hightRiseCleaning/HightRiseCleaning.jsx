@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React from "react";
 import "./_hightRiseCleaning.scss";
 import Top from "../top/Top";
 import HeaderAux from "../../headerAux/HeaderAux";
@@ -11,16 +10,6 @@ import ClientsHightRiseCleaning from "./clients/ClientsHightRiseCleaning";
 import backgroundHeader from "../../../assets/imgs/limpieza_de_vidrios_en_altura.png";
 
 const HightRiseCleaning = () => {
-  const location = useLocation();
-  useEffect(() => {
-    const { hash } = location;
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
   return (
     <div className="hightRiseCleaning" id="hightRiseCleaning">
       <Top />

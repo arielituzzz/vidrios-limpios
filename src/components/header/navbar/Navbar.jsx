@@ -13,6 +13,18 @@ const Navbar = ({ handleVisibility }) => {
     handleVisibility(!isOpen);
   };
 
+  const scrollTo = (section) => {
+    let element;
+    if (section === "CONTACTO") {
+      element = document.getElementById("form-contact");
+    } else {
+      element = document.getElementById("top");
+    }
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="navbar">
       <div className="navbar__content">
@@ -24,7 +36,7 @@ const Navbar = ({ handleVisibility }) => {
             className="navbar__content__botton"
             onClick={toggleMenu}
           />
-          <Link to="/#top">
+          <Link to="/" onClick={() => scrollTo("/")}>
             <img src={logo} alt="logo" className="navbar__content__logo__img" />
           </Link>
         </div>
@@ -32,7 +44,11 @@ const Navbar = ({ handleVisibility }) => {
           <div className="navbar__content__menu__links">
             {MenuData.map((item, index) => {
               return (
-                <NavLink to={item.link} key={index}>
+                <NavLink
+                  to={item.link}
+                  key={index}
+                  onClick={() => scrollTo(item.title)}
+                >
                   {item.title}
                 </NavLink>
               );

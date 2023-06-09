@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React from "react";
 import "./_home.scss";
 import Top from "../top/Top";
 import CarouselPresentation from "./carouselPresentation/CarouselPresentation";
@@ -11,17 +10,6 @@ import CarouselMarks from "./carouselMarks/CarouselMarks";
 import ContactUs from "./contact/Contact";
 
 const Home = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    const { hash } = location;
-    if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
   return (
     <div className="home">
       <Top />

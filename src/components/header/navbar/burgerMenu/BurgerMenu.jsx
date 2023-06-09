@@ -11,19 +11,32 @@ const BurgerMenu = ({ handleVisibility }) => {
     handleVisibility(!isOpen);
   };
 
+  const scrollTo = (section) => {
+    let element;
+    if (section === "CONTACTO") {
+      element = document.getElementById("form-contact");
+    } else {
+      element = document.getElementById("top");
+    }
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    toggleMenu();
+  };
+
   return (
-    <form className="menuBurger" onSubmit={toggleMenu}>
+    <div className="menuBurger">
       {MenuData.map((item, index) => (
         <NavLink
           className="menuBurger__options"
           key={index}
           to={item.link}
-          onClick={toggleMenu}
+          onClick={() => scrollTo(item.title)}
         >
           {item.title}
         </NavLink>
       ))}
-    </form>
+    </div>
   );
 };
 
