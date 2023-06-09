@@ -75,13 +75,13 @@ export const MarksData = [
 export const MenuData = [
   {
     title: "SERVICIOS DE ALTURA",
-    link: "/servicios-de-altura#top",
+    link: "/servicios-de-altura",
   },
   {
     title: "DISTRIBUIDOR OFICIAL 'CASA THAMES'",
-    link: "/distribuidor-thames#top",
+    link: "/distribuidor-thames",
   },
-  { title: "CONTACTO", link: "/#form-contact" },
+  { title: "CONTACTO", link: "/" },
 ];
 
 export const ServicesData = [
