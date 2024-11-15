@@ -15,8 +15,11 @@ const BuildingMaintenanceAndRestorations = () => {
         background={imgBackground}
       />
       <div className="buildingMaintenanceAndRestorations">
-        {OperationsData.map((operation) => (
-          <CarouselMaintenance name={operation.name} />
+        <div className="py-3  ps-4 d-flex justify-content-start">
+          <h5 className="fs-4">Algunos de nuestros trabajos</h5>
+        </div>
+        {OperationsData.map((operation, index) => (
+          <CarouselMaintenance name={operation.name} index={index} />
         ))}
       </div>
     </div>

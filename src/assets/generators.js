@@ -76,6 +76,7 @@ export const MenuData = [
   {
     title: "MANTENIMIENTO Y RESTAURACIONES EDILICIAS",
     link: "/mantenimiento-y-restauraciones-edilicias",
+    icon: "/icons/nuevoServicioIcon.png",
   },
   {
     title: "SERVICIOS DE ALTURA",
@@ -138,7 +139,7 @@ export const ClientsData = [
 ];
 export const OperationsData = [
   {
-    name: "1",
+    name: "Av. San Juan 1896 - CABA",
     imgs: [
       {
         title: "Fachada 1",
@@ -172,14 +173,7 @@ export const OperationsData = [
         title: "Fachada 8",
         img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada8.jpg",
       },
-      {
-        title: "Fachada 9",
-        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada9.jpg",
-      },
-      {
-        title: "Fachada 10",
-        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada10.jpg",
-      },
+
       {
         title: "Fachada 11",
         img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada11.jpg",

@@ -34,6 +34,9 @@
       &__links {
         display: flex;
         column-gap: 40px;
+        &__icon {
+          width: 70px;
+        }
       }
 
       &__links a {
@@ -41,6 +44,7 @@
         text-decoration: none;
         font-size: 1rem;
         font-weight: 600;
+        display: flex;
       }
       &__links a:hover {
         color: $blueLightLight;

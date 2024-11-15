@@ -2,28 +2,24 @@ import React from "react";
 import "./_carouselMaintenance.scss";
 import { OperationsData } from "../../../../assets/generators";
 import config from "../../../../config/config";
-// import img1 from "../../../../assets/imgs/buildingMaintenanceAndRestorations/1/restauracion-fachada1.jpg";
-// import img2 from "../../../../assets/imgs/buildingMaintenanceAndRestorations/1/restauracion-fachada2.jpg";
-// import img3 from "../../../../assets/imgs/buildingMaintenanceAndRestorations/1/restauracion-fachada3.jpg";
 
-const CarouselMaintenance = ({ name }) => {
+const CarouselMaintenance = ({ name, index }) => {
   return (
     <div className="carouselMaintenance">
       <div className="carouselMaintenance__content">
         <div className="carouselMaintenance__content__title">
           <h5 className="carouselMaintenance__content__title__text">
-            Carousel
+            {`Obra "${name}"`}
           </h5>
         </div>
         <div>
           <div
-            id="carouselExampleAutoplaying"
+            id={index}
             class="carousel slide carouselMaintenance__content__slider"
             data-bs-ride="carousel"
             ride="carousel"
           >
             <div class="carousel-inner carouselMaintenance__content__slider__container">
-              <h2>{name}</h2>
               {OperationsData.find(
                 (operation) => operation.name === name
               ).imgs.map((item, index) => (
@@ -33,7 +29,6 @@ const CarouselMaintenance = ({ name }) => {
                 >
                   <div className="row row-md-1 carouselMaintenance__content__slider__container__imgs">
                     <div className="col" key={index}>
-                      <h5>{item.title}</h5>
                       <img
                         src={config.imageBase + item.img}
                         className="text-white text-center carouselMaintenance__content__slider__container__imgs__img"
@@ -81,7 +76,7 @@ const CarouselMaintenance = ({ name }) => {
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-target={`#${index}`}
               data-bs-slide="prev"
             >
               <span
@@ -93,7 +88,7 @@ const CarouselMaintenance = ({ name }) => {
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-target={`#${index}`}
               data-bs-slide="next"
             >
               <span
