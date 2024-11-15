@@ -1,5 +1,5 @@
 const config = {
-  imagenBase: "/imgs/",
+  imageBase: "/imgs/",
 };
 
 export default config;

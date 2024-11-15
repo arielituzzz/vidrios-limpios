@@ -74,6 +74,10 @@ export const MarksData = [
 
 export const MenuData = [
   {
+    title: "MANTENIMIENTO Y RESTAURACIONES EDILICIAS",
+    link: "/mantenimiento-y-restauraciones-edilicias",
+  },
+  {
     title: "SERVICIOS DE ALTURA",
     link: "/servicios-de-altura",
   },
@@ -131,4 +135,67 @@ export const ClientsData = [
   },
   { name: "CONSORCIOS EN CABA Y GRAN BS AS." },
   { name: "CIUDAD DE CORDOBA Y ALREDEDORES." },
+];
+export const OperationsData = [
+  {
+    name: "1",
+    imgs: [
+      {
+        title: "Fachada 1",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada1.jpg",
+      },
+      {
+        title: "Fachada 2",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada2.jpg",
+      },
+      {
+        title: "Fachada 3",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada3.jpg",
+      },
+      {
+        title: "Fachada 4",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada4.jpg",
+      },
+      {
+        title: "Fachada 5",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada5.jpg",
+      },
+      {
+        title: "Fachada 6",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada6.jpg",
+      },
+      {
+        title: "Fachada 7",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada7.jpg",
+      },
+      {
+        title: "Fachada 8",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada8.jpg",
+      },
+      {
+        title: "Fachada 9",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada9.jpg",
+      },
+      {
+        title: "Fachada 10",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada10.jpg",
+      },
+      {
+        title: "Fachada 11",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada11.jpg",
+      },
+      {
+        title: "Fachada 12",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada12.jpg",
+      },
+      {
+        title: "Fachada 13",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada13.jpg",
+      },
+      {
+        title: "Fachada 14",
+        img: "/buildingMaintenanceAndRestorations/1/restauracion-fachada14.jpeg",
+      },
+    ],
+  },
 ];
