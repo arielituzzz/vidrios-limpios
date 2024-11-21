@@ -1,0 +1,40 @@
+[debug] [2024-11-15T20:18:06.316Z] ----------------------------------------------------------------------
+[debug] [2024-11-15T20:18:06.319Z] Command:       /usr/bin/node /usr/bin/firebase deploy
+[debug] [2024-11-15T20:18:06.320Z] CLI Version:   11.25.1
+[debug] [2024-11-15T20:18:06.321Z] Platform:      linux
+[debug] [2024-11-15T20:18:06.321Z] Node Version:  v19.9.0
+[debug] [2024-11-15T20:18:06.321Z] Time:          Fri Nov 15 2024 17:18:06 GMT-0300 (hora estándar de Argentina)
+[debug] [2024-11-15T20:18:06.321Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-11-15T20:18:06.326Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-11-15T20:18:06.486Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-11-15T20:18:06.487Z] > authorizing via signed-in user (suarezariel86@gmail.com)
+[debug] [2024-11-15T20:18:06.487Z] [iam] checking project vidrios-limpios for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-11-15T20:18:06.488Z] > refreshing access token with scopes: []
+[debug] [2024-11-15T20:18:06.489Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-15T20:18:06.490Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-15T20:18:06.673Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-11-15T20:18:06.673Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-15T20:18:06.674Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vidrios-limpios:testIamPermissions [none]
+[debug] [2024-11-15T20:18:06.674Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vidrios-limpios:testIamPermissions x-goog-quota-user=projects/vidrios-limpios
+[debug] [2024-11-15T20:18:06.674Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vidrios-limpios:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-11-15T20:18:06.885Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-11-15T20:18:06.886Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-11-15T20:18:07.606Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vidrios-limpios:testIamPermissions 401
+[debug] [2024-11-15T20:18:07.606Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vidrios-limpios:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-11-15T20:18:07.608Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-11-15T20:18:07.609Z] > refreshing access token with scopes: []
+[debug] [2024-11-15T20:18:07.609Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-11-15T20:18:07.609Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-15T20:18:07.683Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-11-15T20:18:07.684Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-11-15T20:18:07.685Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vidrios-limpios [none]
+[debug] [2024-11-15T20:18:07.914Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vidrios-limpios 401
+[debug] [2024-11-15T20:18:07.915Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vidrios-limpios {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-11-15T20:18:07.916Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-11-15T20:18:07.920Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/usr/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/usr/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project vidrios-limpios. Please make sure the project exists and your account has permission to access it.

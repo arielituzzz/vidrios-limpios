@@ -1,56 +1,68 @@
 .carouselMaintenance {
   margin-bottom: 50px;
-  padding: 0px;
-  &__content {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &__title {
-      &__text {
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 600;
-      }
-    }
-    &__slider {
-      &__container {
-        &__imgs {
-          &__img {
-            width: 350px;
-            height: 350px;
-            background-color: transparent;
-          }
-        }
-      }
-    }
+  &__imgAfter {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 10%;
   }
-}
 
-/* DESKTOP························································································································ */
-@media (min-width: 1024px) {
-  .carouselMaintenance {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__content {
-      width: 70%;
-      &__title {
-        &__text {
-          font-size: 2.1rem;
-        }
-      }
-      &__slider {
-        &__container {
-          &__imgs {
-            &__img {
-              height: 450px;
-              width: 450px;
-            }
-          }
-        }
-      }
-    }
-  }
+  //   display: flex;
+  //   flex-direction: column;
+  //   &__content {
+  //     display: flex;
+  //   }
+  // margin-bottom: 50px;
+  // padding: 0px;
+  //   &__content {
+  //     padding: 20px;
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+
+  //     &__title {
+  //       &__text {
+  //         text-align: center;
+  //         font-size: 1.5rem;
+  //         font-weight: 600;
+  //       }
+  //     }
+  //     &__slider {
+  //       &__container {
+  //         &__imgs {
+  //           &__img {
+  //             width: 350px;
+  //             height: 350px;
+  //             background-color: transparent;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // /* DESKTOP························································································································ */
+  // @media (min-width: 1024px) {
+  //   .carouselMaintenance {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     &__content {
+  //       width: 70%;
+  //       &__title {
+  //         &__text {
+  //           font-size: 2.1rem;
+  //         }
+  //       }
+  //       &__slider {
+  //         &__container {
+  //           &__imgs {
+  //             &__img {
+  //               height: 450px;
+  //               width: 450px;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
 }

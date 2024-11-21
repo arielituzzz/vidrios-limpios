@@ -1,105 +1,32 @@
 import React from "react";
 import "./_carouselMaintenance.scss";
-import { OperationsData } from "../../../../assets/generators";
-import config from "../../../../config/config";
+import CarouselMaintenanceBefore from "./CarouselMaintenanceBefore";
+import CarouselMaintenanceAfter from "./CarouselMaintenanceAfter";
+import IconAfter from "../../../../assets/imgs/icons/iconAfter.png";
+// import { OperationsData } from "../../../../assets/generators";
 
-const CarouselMaintenance = ({ name, index }) => {
+const CarouselMaintenance = ({ name }) => {
   return (
-    <div className="carouselMaintenance">
-      <div className="carouselMaintenance__content">
-        <div className="carouselMaintenance__content__title">
-          <h5 className="carouselMaintenance__content__title__text">
-            {`Obra "${name}"`}
-          </h5>
+    <div className="d-flex flex-column carouselMaintenance">
+      <div className=" w-100 d-flex justify-content-center ">
+        <h5>{`Obra "${name}"`}</h5>
+      </div>
+      <div className="w-100 d-flex flex-sm-column flex-lg-row align-items-sm-center  justify-content-lg-center carouselMaintenance__content grid gap-0 column-gap-5 row-gap-5">
+        <div className="d-flex align-items-center">
+          {/* <h5>Antes</h5> */}
+          <CarouselMaintenanceBefore name={name} />
         </div>
-        <div>
-          <div
-            id={index}
-            class="carousel slide carouselMaintenance__content__slider"
-            data-bs-ride="carousel"
-            ride="carousel"
-          >
-            <div class="carousel-inner carouselMaintenance__content__slider__container">
-              {OperationsData.find(
-                (operation) => operation.name === name
-              ).imgs.map((item, index) => (
-                <div
-                  className={`carousel-item ${index === 0 ? "active" : ""}`}
-                  data-bs-interval="4000"
-                >
-                  <div className="row row-md-1 carouselMaintenance__content__slider__container__imgs">
-                    <div className="col" key={index}>
-                      <img
-                        src={config.imageBase + item.img}
-                        className="text-white text-center carouselMaintenance__content__slider__container__imgs__img"
-                        alt={item.title}
-                      />
-                    </div>
-                  </div>
-                </div>
-              ))}
+        <img
+          src={IconAfter}
+          alt="iconAfter"
+          className="carouselMaintenance__imgAfter"
+        />
 
-              {/* <div className="carousel-item active" data-bs-interval="4000">
-              <div className="row row-md-1 carouselMaintenance__content__slider__container__imgs">
-                {OperationsData.map(
-                  (mark) =>
-                    OperationsData.indexOf(mark) <= 3 && (
-                      <div className="col" key={OperationsData.indexOf(mark)}>
-                        <img
-                          src={config.assetsBase + mark.img}
-                          className="text-white text-center carouselMaintenance__content__slider__container__imgs__img"
-                          alt={mark.title}
-                        />
-                      </div>
-                    )
-                )}
-              </div>
-            </div>
-            <div className="carousel-item" data-bs-interval="4000">
-              <div className="row row-md-1 carouselMaintenance__content__slider__container__imgs">
-                {OperationsData.map(
-                  (mark) =>
-                    OperationsData.indexOf(mark) > 3 &&
-                    OperationsData.indexOf(mark) <= 7 && (
-                      <div className="col" key={OperationsData.indexOf(mark)}>
-                        <img
-                          src={config.assetsBase + mark.img}
-                          className="text-white text-center carouselMaintenance__content__slider__container__imgs__img"
-                          alt={mark.title}
-                        />
-                      </div>
-                    )
-                )}
-              </div>
-            </div> */}
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target={`#${index}`}
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target={`#${index}`}
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        <div className="d-flex align-items-center">
+          <CarouselMaintenanceAfter name={name} />
         </div>
       </div>
+      <hr />
     </div>
   );
 };
