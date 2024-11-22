@@ -3,7 +3,7 @@
   &__imgAfter {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 10%;
+    width: 30%;
   }
 
   //   display: flex;
@@ -40,29 +40,34 @@
   //   }
   // }
 
-  // /* DESKTOP························································································································ */
-  // @media (min-width: 1024px) {
-  //   .carouselMaintenance {
-  //     display: flex;
-  //     justify-content: center;
-  //     align-items: center;
-  //     &__content {
-  //       width: 70%;
-  //       &__title {
-  //         &__text {
-  //           font-size: 2.1rem;
-  //         }
-  //       }
-  //       &__slider {
-  //         &__container {
-  //           &__imgs {
-  //             &__img {
-  //               height: 450px;
-  //               width: 450px;
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
+  /* DESKTOP························································································································ */
+  @media (min-width: 1024px) {
+    .carouselMaintenance {
+      &__imgAfter {
+        // border-radius: 10px;
+        // box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 20%;
+      }
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // &__content {
+      //   width: 70%;
+      //   &__title {
+      //     &__text {
+      //       font-size: 2.1rem;
+      //     }
+      //   }
+      //   &__slider {
+      //     &__container {
+      //       &__imgs {
+      //         &__img {
+      //           height: 450px;
+      //           width: 450px;
+      //         }
+      //       }
+      //     }
+      //   }
+    }
+  }
 }

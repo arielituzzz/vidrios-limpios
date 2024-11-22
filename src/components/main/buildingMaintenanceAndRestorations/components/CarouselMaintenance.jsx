@@ -11,7 +11,7 @@ const CarouselMaintenance = ({ name }) => {
       <div className=" w-100 d-flex justify-content-center ">
         <h5>{`Obra "${name}"`}</h5>
       </div>
-      <div className="w-100 d-flex flex-sm-column flex-lg-row align-items-sm-center  justify-content-lg-center carouselMaintenance__content grid gap-0 column-gap-5 row-gap-5">
+      <div className="w-100 d-flex flex-column flex-lg-row align-items-center  justify-content-lg-center carouselMaintenance__content grid gap-0 column-gap-5 row-gap-5">
         <div className="d-flex align-items-center">
           {/* <h5>Antes</h5> */}
           <CarouselMaintenanceBefore name={name} />
