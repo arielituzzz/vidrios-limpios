@@ -15,12 +15,22 @@ const BuildingMaintenanceAndRestorations = () => {
         background={imgBackground}
       />
       <div className="buildingMaintenanceAndRestorations">
+        <div className="w-100 d-flex justify-content-center">
+          <h4 className="animate__animated animate__zoomIn w-50 buildingMaintenanceAndRestorations__promoTitle">
+            CONSULTE FINANCIACION{" "}
+            <span className="animate__animated animate__fadeIn">
+              HASTA 12 CUOTAS!!!
+            </span>
+          </h4>
+        </div>
         <div className="py-3  ps-4 d-flex justify-content-start">
           <h5 className="fs-4">Algunos de nuestros trabajos</h5>
         </div>
-        {OperationsData.map((operation) => (
-          <CarouselMaintenance name={operation.name} />
-        ))}
+        <div className="d-flex flex-column align-items-center">
+          {OperationsData.map((operation) => (
+            <CarouselMaintenance name={operation.name} />
+          ))}
+        </div>
       </div>
     </div>
   );

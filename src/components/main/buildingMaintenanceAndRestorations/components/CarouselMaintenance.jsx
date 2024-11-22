@@ -8,7 +8,7 @@ import IconAfter from "../../../../assets/imgs/icons/iconAfter.png";
 const CarouselMaintenance = ({ name }) => {
   return (
     <div className="d-flex flex-column carouselMaintenance">
-      <div className=" w-100 d-flex justify-content-center ">
+      <div className=" w-100 d-flex justify-content-center my-4">
         <h5>{`Obra "${name}"`}</h5>
       </div>
       <div className="w-100 d-flex flex-column flex-lg-row align-items-center  justify-content-lg-center carouselMaintenance__content grid gap-0 column-gap-5 row-gap-5">
@@ -26,7 +26,6 @@ const CarouselMaintenance = ({ name }) => {
           <CarouselMaintenanceAfter name={name} />
         </div>
       </div>
-      <hr />
     </div>
   );
 };

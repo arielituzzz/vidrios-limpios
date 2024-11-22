@@ -1,4 +1,25 @@
 .buildingMaintenanceAndRestorations {
   margin: 0px;
   padding: 0px;
+  &__promoTitle {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgb(89, 106, 233);
+    color: royalblue;
+    span {
+      color: red;
+    }
+  }
+}
+.animate__animated.animate__zoomIn {
+  --animate-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 2s;
+  animation-iteration-count: infinite;
 }
