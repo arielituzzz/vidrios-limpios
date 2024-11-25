@@ -146,22 +146,6 @@ export const OperationsData = [
           title: "Fachada 1",
           img: "/buildingMaintenanceAndRestorations/before/fachada1.png",
         },
-        {
-          title: "Fachada 2",
-          img: "/buildingMaintenanceAndRestorations/before/fachada2.png",
-        },
-        {
-          title: "Fachada 3",
-          img: "/buildingMaintenanceAndRestorations/before/fachada3.png",
-        },
-        {
-          title: "Fachada 4",
-          img: "/buildingMaintenanceAndRestorations/before/fachada4.png",
-        },
-        {
-          title: "Fachada 5",
-          img: "/buildingMaintenanceAndRestorations/before/fachada5.png",
-        },
       ],
       after: [
         {
@@ -170,7 +154,7 @@ export const OperationsData = [
         },
         {
           title: "Fachada 2",
-          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada2.jpg",
+          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada2.jpeg",
         },
         {
           title: "Fachada 3",
@@ -179,39 +163,6 @@ export const OperationsData = [
         {
           title: "Fachada 4",
           img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada4.jpg",
-        },
-        {
-          title: "Fachada 5",
-          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada5.jpg",
-        },
-        {
-          title: "Fachada 6",
-          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada6.jpg",
-        },
-        {
-          title: "Fachada 7",
-          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada7.jpg",
-        },
-        {
-          title: "Fachada 8",
-          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada8.jpg",
-        },
-
-        {
-          title: "Fachada 11",
-          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada11.jpg",
-        },
-        {
-          title: "Fachada 12",
-          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada12.jpg",
-        },
-        {
-          title: "Fachada 13",
-          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada13.jpg",
-        },
-        {
-          title: "Fachada 14",
-          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada14.jpeg",
         },
       ],
     },

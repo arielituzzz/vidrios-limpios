@@ -1,5 +1,5 @@
 .carouselMaintenance {
-  width: 90%;
+  width: 80%;
   margin-bottom: 50px;
   padding-bottom: 30px;
   border: 2px solid black;
@@ -45,33 +45,34 @@
   //     }
   //   }
   // }
+}
 
-  /* DESKTOP························································································································ */
-  @media (min-width: 1024px) {
-    .carouselMaintenance {
-      &__imgAfter {
-        width: 10%;
-      }
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // &__content {
-      //   width: 70%;
-      //   &__title {
-      //     &__text {
-      //       font-size: 2.1rem;
-      //     }
-      //   }
-      //   &__slider {
-      //     &__container {
-      //       &__imgs {
-      //         &__img {
-      //           height: 450px;
-      //           width: 450px;
-      //         }
-      //       }
-      //     }
-      //   }
+/* DESKTOP························································································································ */
+@media (min-width: 1024px) {
+  .carouselMaintenance {
+    width: 55%;
+    &__imgAfter {
+      width: 10%;
     }
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // &__content {
+    //   width: 70%;
+    //   &__title {
+    //     &__text {
+    //       font-size: 2.1rem;
+    //     }
+    //   }
+    //   &__slider {
+    //     &__container {
+    //       &__imgs {
+    //         &__img {
+    //           height: 450px;
+    //           width: 450px;
+    //         }
+    //       }
+    //     }
+    //   }
   }
 }

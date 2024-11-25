@@ -6,16 +6,16 @@ import config from "../../../../config/config";
 const CarouselMaintenanceBefore = ({ name }) => {
   return (
     <div className="carouselMaintenanceTimeline">
-      <div className="carouselMaintenanceTimeline__content">
-        <div className="carouselMaintenanceTimeline__content__title"></div>
+      <div className="carouselMaintenanceTimeline__contentBefore">
+        <div className="carouselMaintenanceTimeline__contentBefore__title"></div>
         <div>
           <div
             id={`${name.replace(/ /g, "")}/Before`}
-            className="carousel slide carouselMaintenanceTimeline__content__slider"
+            className="carousel slide carouselMaintenanceTimeline__contentBefore__slider"
             data-bs-ride="carousel"
             ride="carousel"
           >
-            <div className="carousel-inner carouselMaintenanceTimeline__content__slider__container">
+            <div className="carousel-inner carouselMaintenanceTimeline__contentBefore__slider__container before">
               {OperationsData.find(
                 (operation) => operation.name === name
               ).imgs.before.map((item, index) => (
@@ -24,11 +24,11 @@ const CarouselMaintenanceBefore = ({ name }) => {
                   className={`carousel-item ${index === 0 ? "active" : ""}`}
                   data-bs-interval="4000"
                 >
-                  <div className="row row-md-1 carouselMaintenanceTimeline__content__slider__container__imgs">
+                  <div className="row row-md-1 carouselMaintenanceTimeline__contentBefore__slider__container__imgs">
                     <div className="col">
                       <img
                         src={config.imageBase + item.img}
-                        className="carouselMaintenanceTimeline__content__slider__container__imgs__img"
+                        className="carouselMaintenanceTimeline__contentBefore__slider__container__imgs__img"
                         alt={item.title}
                       />
                     </div>

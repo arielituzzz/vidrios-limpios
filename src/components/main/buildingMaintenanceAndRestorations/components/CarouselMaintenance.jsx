@@ -9,11 +9,10 @@ const CarouselMaintenance = ({ name }) => {
   return (
     <div className="d-flex flex-column carouselMaintenance">
       <div className=" w-100 d-flex justify-content-center my-4">
-        <h5>{`Obra "${name}"`}</h5>
+        <h5 className="fs-3">{`Obra "${name}"`}</h5>
       </div>
       <div className="w-100 d-flex flex-column flex-lg-row align-items-center  justify-content-lg-center carouselMaintenance__content grid gap-0 column-gap-5 row-gap-5">
         <div className="d-flex align-items-center">
-          {/* <h5>Antes</h5> */}
           <CarouselMaintenanceBefore name={name} />
         </div>
         <img
