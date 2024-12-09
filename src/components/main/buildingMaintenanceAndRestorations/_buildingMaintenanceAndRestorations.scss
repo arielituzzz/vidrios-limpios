@@ -1,3 +1,5 @@
+@import "../../../assets/index.scss";
+
 .buildingMaintenanceAndRestorations {
   margin: 0px;
   padding: 0px;
@@ -6,14 +8,14 @@
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    font-style: italic;
-    text-shadow: 1px 1px 2px rgb(89, 106, 233);
-    color: royalblue;
-    background-color: rgb(238, 248, 104);
+    font-style: $fontRoboto;
+    // text-shadow: 1px 1px 2px $darkBlue(89, 106, 233);
+    color: $blueLight;
+    // background-color: whitesmoke;
     padding: 5px;
     border-radius: 5%;
     span {
-      color: red;
+      color: $red;
     }
     span img {
       width: 70px;
@@ -35,7 +37,7 @@
 @media (min-width: 1024px) {
   .buildingMaintenanceAndRestorations {
     &__promoTitle {
-      border-radius: 40%;
+      // border-radius: 40%;
       span {
       }
       span img {

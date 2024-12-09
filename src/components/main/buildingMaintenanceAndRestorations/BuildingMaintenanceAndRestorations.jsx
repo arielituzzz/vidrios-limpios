@@ -16,8 +16,8 @@ const BuildingMaintenanceAndRestorations = () => {
         background={imgBackground}
       />
       <div className="buildingMaintenanceAndRestorations">
-        <div className="w-100 d-flex justify-content-center">
-          <h4 className="animate__animated animate__zoomIn w-50 buildingMaintenanceAndRestorations__promoTitle d-flex flex-column flex-lg-row justify-content-center align-items-lg-center  ">
+        <div className="w-100 d-flex justify-content-center text-center">
+          <h4 className="animate__animated animate__zoomIn buildingMaintenanceAndRestorations__promoTitle d-flex flex-column flex-lg-row justify-content-center align-items-lg-center ">
             CONSULTE FINANCIACION{" "}
             <span>
               <img src={ImgFinancing} alt="iconFinancing" />

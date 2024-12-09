@@ -9,6 +9,12 @@ export const CardsData = [
     link: `${Contact.whatsApp}`,
   },
   {
+    img: "/mantenimiento-y-restauraciones-edilicias.png",
+    title: "Mantenimiento y restauraciones Edilicias",
+    description: "HIDROLAVADOS, VIDRIOS, PINTURA, REPARACIONES",
+    link: `${Contact.whatsApp}`,
+  },
+  {
     img: "/oldSite/finales.jpg",
     title: "Finales de Obra",
     description:
@@ -76,7 +82,7 @@ export const MenuData = [
   {
     title: "MANTENIMIENTO Y RESTAURACIONES EDILICIAS",
     link: "/mantenimiento-y-restauraciones-edilicias",
-    icon: "/icons/nuevoServicioIcon.png",
+    // icon: "/icons/nuevoServicioIcon.png",
   },
   {
     title: "SERVICIOS DE ALTURA",
@@ -91,6 +97,7 @@ export const MenuData = [
 
 export const ServicesData = [
   { name: "Limpieza de Vidrios" },
+  { name: "Mantenimiento y Restauraciones Edilicias" },
   { name: "Limpieza de Oficinas" },
   { name: "Finales de Obra" },
   { name: "Limpieza en Altura" },
