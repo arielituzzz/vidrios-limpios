@@ -3,7 +3,7 @@ import "./_about.scss";
 import config from "../../../../config/config";
 
 const About = () => {
-  const imgAbout = `${config.imagenBase}/oldSite/d195661ecc233ee68eeae0414a7afe24_work-374-374-c-100.jpg`;
+  const imgAbout = `${config.imageBase}/oldSite/d195661ecc233ee68eeae0414a7afe24_work-374-374-c-100.jpg`;
   return (
     <div className="about">
       <div className="about__content">
