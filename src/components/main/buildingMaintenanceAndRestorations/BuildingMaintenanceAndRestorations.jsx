@@ -7,6 +7,7 @@ import imgBackground from "../../../assets/imgs/mantenimiento-y-restauraciones-e
 import CarouselMaintenance from "./components/CarouselMaintenance";
 import { OperationsData } from "../../../assets/generators";
 import ImgFinancing from "../../../assets/imgs/icons/iconFinancing.png";
+import ImgBanner from "../../../assets/imgs/banner-mantenimiento.jpg";
 
 const BuildingMaintenanceAndRestorations = () => {
   return (
@@ -17,6 +18,11 @@ const BuildingMaintenanceAndRestorations = () => {
         background={imgBackground}
       />
       <div className="buildingMaintenanceAndRestorations">
+        <div className="buildingMaintenanceAndRestorations__bannerContainer">
+          <div className="buildingMaintenanceAndRestorations__bannerContainer__banner">
+            <img src={ImgBanner} alt="banner-mantenimiento" className="w-100" />
+          </div>
+        </div>
         <div className="w-100 d-flex justify-content-center text-center">
           <h4 className="animate__animated animate__zoomIn buildingMaintenanceAndRestorations__promoTitle d-flex flex-column flex-lg-row justify-content-center align-items-lg-center ">
             CONSULTE FINANCIACION{" "}

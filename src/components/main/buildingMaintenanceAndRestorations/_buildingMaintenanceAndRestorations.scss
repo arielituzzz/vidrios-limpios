@@ -3,6 +3,11 @@
 .buildingMaintenanceAndRestorations {
   margin: 0px;
   padding: 0px;
+  &__bannerContainer {
+    &__banner {
+      width: 100%;
+    }
+  }
   &__promoTitle {
     margin-top: 50px;
     text-align: center;
@@ -34,6 +39,13 @@
 /* DESKTOP························································································································ */
 @media (min-width: 1024px) {
   .buildingMaintenanceAndRestorations {
+    &__bannerContainer {
+      display: flex;
+      justify-content: center;
+      &__banner {
+        width: 50%;
+      }
+    }
     &__promoTitle {
       span {
       }
