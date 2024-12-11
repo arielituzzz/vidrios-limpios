@@ -1,5 +1,6 @@
 import React from "react";
 import "./_buildingMaintenanceAndRestorations.scss";
+import { v4 as uuidv4 } from "uuid";
 import Top from "../top/Top";
 import HeaderAux from "../../headerAux/HeaderAux";
 import imgBackground from "../../../assets/imgs/mantenimiento-y-restauraciones-edilicias.png";
@@ -32,7 +33,7 @@ const BuildingMaintenanceAndRestorations = () => {
         </div>
         <div className="d-flex flex-column align-items-center">
           {OperationsData.map((operation) => (
-            <CarouselMaintenance name={operation.name} />
+            <CarouselMaintenance name={operation.name} key={uuidv4()} />
           ))}
         </div>
       </div>

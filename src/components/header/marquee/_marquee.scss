@@ -2,7 +2,7 @@
 .marquee {
   background-color: $darkBlue;
   height: 40px;
-  width: 200%;
+  width: 300%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -10,7 +10,7 @@
   &__content {
     display: flex;
     justify-content: flex-end;
-    width: 200%;
+    width: 300%;
     overflow: hidden;
     background-color: $darkBlue;
     &__text {
@@ -31,6 +31,12 @@
 
 /* DESKTOP························································································································ */
 @media (min-width: 1024px) {
+  .marquee {
+    width: 130%;
+    &__content {
+      width: 130%;
+    }
+  }
   .animate__animated.animate__slideOutLeft {
     --animate-duration: 10s;
     // animation-iteration-count: infinite;

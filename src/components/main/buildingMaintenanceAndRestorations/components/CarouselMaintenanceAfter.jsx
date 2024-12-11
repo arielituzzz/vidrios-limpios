@@ -1,6 +1,6 @@
 import React from "react";
 import "./_carouselMaintenanceTimeline.scss";
-
+import { v4 as uuidv4 } from "uuid";
 import { OperationsData } from "../../../../assets/generators";
 import config from "../../../../config/config";
 
@@ -12,20 +12,21 @@ const CarouselMaintenanceAfter = ({ name }) => {
         <div>
           <div
             id={`${name.replace(/ /g, "")}/After`}
-            class="carousel slide carouselMaintenanceTimeline__content__slider"
+            className="carousel slide carouselMaintenanceTimeline__content__slider"
             data-bs-ride="carousel"
             ride="carousel"
           >
-            <div class="carousel-inner carouselMaintenanceTimeline__content__slider__container">
+            <div className="carousel-inner carouselMaintenanceTimeline__content__slider__container">
               {OperationsData.find(
                 (operation) => operation.name === name
               ).imgs.after.map((item, index) => (
                 <div
                   className={`carousel-item ${index === 0 ? "active" : ""}`}
                   data-bs-interval="4000"
+                  key={uuidv4()}
                 >
                   <div className="row row-md-1 carouselMaintenanceTimeline__content__slider__container__imgs">
-                    <div className="col" key={index}>
+                    <div className="col">
                       <img
                         src={config.imageBase + item.img}
                         className="text-white text-center carouselMaintenanceTimeline__content__slider__container__imgs__img"
@@ -37,28 +38,28 @@ const CarouselMaintenanceAfter = ({ name }) => {
               ))}
             </div>
             <button
-              class="carousel-control-prev"
+              className="carousel-control-prev"
               type="button"
               data-bs-target={`#${name.replace(/ /g, "")}/After`}
               data-bs-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon"
+                className="carousel-control-prev-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Previous</span>
+              <span className="visually-hidden">Previous</span>
             </button>
             <button
-              class="carousel-control-next"
+              className="carousel-control-next"
               type="button"
               data-bs-target={`#${name.replace(/ /g, "")}/After`}
               data-bs-slide="next"
             >
               <span
-                class="carousel-control-next-icon"
+                className="carousel-control-next-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Next</span>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>

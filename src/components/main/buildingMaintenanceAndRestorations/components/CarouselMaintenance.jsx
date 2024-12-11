@@ -3,7 +3,6 @@ import "./_carouselMaintenance.scss";
 import CarouselMaintenanceBefore from "./CarouselMaintenanceBefore";
 import CarouselMaintenanceAfter from "./CarouselMaintenanceAfter";
 import IconAfter from "../../../../assets/imgs/icons/iconAfter.png";
-// import { OperationsData } from "../../../../assets/generators";
 
 const CarouselMaintenance = ({ name }) => {
   return (

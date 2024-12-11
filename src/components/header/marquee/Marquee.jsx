@@ -6,7 +6,7 @@ const Marquee = () => {
     <div className="marquee ">
       <div className="marquee__content animate__animated animate__slideOutLeft">
         <div className="marquee__content__text">
-          CONSULTE POR NUESTROS ABONOS ANUALES 2025!!!
+          CONSULTE POR ABONOS ANUALES 2025!!!
         </div>
       </div>
     </div>
