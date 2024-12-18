@@ -1,78 +1,53 @@
+@import "../../../../assets/index.scss";
+
 .carouselMaintenance {
   width: 90%;
   margin-bottom: 50px;
-  padding-bottom: 30px;
-  border: 2px solid black;
+  padding-bottom: 50px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
-  &__imgAfter {
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    width: 30%;
+  display: flex;
+  flex-direction: column;
+  &__title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    padding: 0px 5px;
+    h5 {
+      font-size: 1.5rem;
+      text-align: center;
+      font-family: $fontRoboto;
+      color: $blue;
+    }
   }
 
-  //   display: flex;
-  //   flex-direction: column;
-  //   &__content {
-  //     display: flex;
-  //   }
-  // margin-bottom: 50px;
-  // padding: 0px;
-  //   &__content {
-  //     padding: 20px;
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  //     &__title {
-  //       &__text {
-  //         text-align: center;
-  //         font-size: 1.5rem;
-  //         font-weight: 600;
-  //       }
-  //     }
-  //     &__slider {
-  //       &__container {
-  //         &__imgs {
-  //           &__img {
-  //             width: 350px;
-  //             height: 350px;
-  //             background-color: transparent;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+    hr {
+      width: 70%;
+      margin-top: 50px;
+    }
+  }
 }
 
 /* DESKTOP························································································································ */
 @media (min-width: 1024px) {
   .carouselMaintenance {
     width: 55%;
-    &__imgAfter {
-      width: 10%;
+    padding-bottom: 40px;
+
+    &__content {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      hr {
+        display: none;
+      }
     }
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // &__content {
-    //   width: 70%;
-    //   &__title {
-    //     &__text {
-    //       font-size: 2.1rem;
-    //     }
-    //   }
-    //   &__slider {
-    //     &__container {
-    //       &__imgs {
-    //         &__img {
-    //           height: 450px;
-    //           width: 450px;
-    //         }
-    //       }
-    //     }
-    //   }
   }
 }

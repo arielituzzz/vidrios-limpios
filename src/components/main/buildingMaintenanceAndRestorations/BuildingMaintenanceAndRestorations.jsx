@@ -34,7 +34,7 @@ const BuildingMaintenanceAndRestorations = () => {
             </span>
           </h4>
         </div>
-        <div className="py-3  ps-4 d-flex justify-content-start">
+        <div className="py-3   d-flex justify-content-center">
           <h5 className="fs-4">Algunos de nuestros trabajos</h5>
         </div>
         <div className="d-flex flex-column align-items-center">

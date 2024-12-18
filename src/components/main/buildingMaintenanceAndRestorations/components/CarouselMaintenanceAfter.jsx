@@ -8,7 +8,9 @@ const CarouselMaintenanceAfter = ({ name }) => {
   return (
     <div className="carouselMaintenanceTimeline">
       <div className="carouselMaintenanceTimeline__content">
-        <div className="carouselMaintenanceTimeline__content__title"></div>
+        <div className="carouselMaintenanceTimeline__content__title">
+          <h6>...Despues</h6>
+        </div>
         <div>
           <div
             id={`${name.replace(/ /g, "")}/After`}
