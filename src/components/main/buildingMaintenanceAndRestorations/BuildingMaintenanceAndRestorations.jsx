@@ -6,7 +6,6 @@ import HeaderAux from "../../headerAux/HeaderAux";
 import imgBackground from "../../../assets/imgs/mantenimiento-y-restauraciones-edilicias.png";
 import CarouselMaintenance from "./components/CarouselMaintenance";
 import { OperationsData } from "../../../assets/generators";
-import ImgFinancing from "../../../assets/imgs/icons/iconFinancing.png";
 import ImgBanner from "../../../assets/imgs/banner-mantenimiento.jpg";
 
 const BuildingMaintenanceAndRestorations = () => {
@@ -25,10 +24,7 @@ const BuildingMaintenanceAndRestorations = () => {
         </div>
         <div className="w-100 d-flex justify-content-center text-center">
           <h4 className="animate__animated animate__zoomIn buildingMaintenanceAndRestorations__promoTitle d-flex flex-column flex-lg-row justify-content-center align-items-lg-center ">
-            CONSULTE FINANCIACION{" "}
-            <span>
-              <img src={ImgFinancing} alt="iconFinancing" />
-            </span>
+            CONSULTE FINANCIACION*
             <span className="animate__animated animate__fadeIn">
               HASTA 12 CUOTAS!!!
             </span>

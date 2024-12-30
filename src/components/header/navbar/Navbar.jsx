@@ -50,7 +50,7 @@ const Navbar = ({ handleVisibility }) => {
                   key={index}
                   onClick={() => scrollTo(item.title)}
                 >
-                  <div className="column-gap-2 d-flex justify-content-evenly align-items-center">
+                  <div className="column-gap-2 d-flex justify-content-evenly align-items-center p-1 text-center rounded-bottom-2 navbar__content__menu__links__button">
                     {item.icon && (
                       <img
                         className="navbar__content__menu__links__icon"
