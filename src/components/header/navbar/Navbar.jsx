@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./_navbar.scss";
+import config from "../../../config/config";
 import logo from "../../../assets/imgs/logo.png";
 import burgerBotton from "../../../assets/imgs/icons/burger-menu.svg";
 import { MenuData } from "../../../assets/generators";
@@ -49,7 +50,17 @@ const Navbar = ({ handleVisibility }) => {
                   key={index}
                   onClick={() => scrollTo(item.title)}
                 >
-                  {item.title}
+                  <div className="column-gap-2 d-flex justify-content-evenly align-items-center p-1 text-center rounded-bottom-2 navbar__content__menu__links__button">
+                    {item.icon && (
+                      <img
+                        className="navbar__content__menu__links__icon"
+                        src={config.imageBase + item.icon}
+                        alt={item.title}
+                      />
+                    )}
+
+                    {item.title}
+                  </div>
                 </NavLink>
               );
             })}

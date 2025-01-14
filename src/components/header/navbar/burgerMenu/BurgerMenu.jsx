@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./_burgerMenu.scss";
+import config from "../../../../config/config";
 import { NavLink } from "react-router-dom";
 import { MenuData } from "../../../../assets/generators";
 
@@ -33,7 +34,16 @@ const BurgerMenu = ({ handleVisibility }) => {
           to={item.link}
           onClick={() => scrollTo(item.title)}
         >
-          {item.title}
+          <div className="column-gap-5 d-flex justify-content-evenly align-items-center">
+            {item.title}
+            {item.icon && (
+              <img
+                className="menuBurger__options__icon"
+                src={config.imageBase + item.icon}
+                alt={item.title}
+              />
+            )}
+          </div>
         </NavLink>
       ))}
     </div>

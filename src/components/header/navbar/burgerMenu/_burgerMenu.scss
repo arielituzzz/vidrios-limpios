@@ -13,6 +13,11 @@
     width: 95%;
     text-decoration: none;
     padding: 10px 0px;
+    display: flex;
+    // justify-content: flex-start;
+    &__icon {
+      width: 50px;
+    }
   }
 }
 

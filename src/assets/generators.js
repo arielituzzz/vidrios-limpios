@@ -9,6 +9,12 @@ export const CardsData = [
     link: `${Contact.whatsApp}`,
   },
   {
+    img: "/mantenimiento-y-restauraciones-edilicias.png",
+    title: "Mantenimiento y restauraciones Edilicias",
+    description: "HIDROLAVADOS, VIDRIOS, PINTURA, REPARACIONES",
+    link: `${Contact.whatsApp}`,
+  },
+  {
     img: "/oldSite/finales.jpg",
     title: "Finales de Obra",
     description:
@@ -74,6 +80,11 @@ export const MarksData = [
 
 export const MenuData = [
   {
+    title: "MANTENIMIENTO Y RESTAURACIONES EDILICIAS",
+    link: "/mantenimiento-y-restauraciones-edilicias",
+    // icon: "/icons/nuevoServicioIcon.png",
+  },
+  {
     title: "SERVICIOS DE ALTURA",
     link: "/servicios-de-altura",
   },
@@ -86,6 +97,7 @@ export const MenuData = [
 
 export const ServicesData = [
   { name: "Limpieza de Vidrios" },
+  { name: "Mantenimiento y Restauraciones Edilicias" },
   { name: "Limpieza de Oficinas" },
   { name: "Finales de Obra" },
   { name: "Limpieza en Altura" },
@@ -131,4 +143,35 @@ export const ClientsData = [
   },
   { name: "CONSORCIOS EN CABA Y GRAN BS AS." },
   { name: "CIUDAD DE CORDOBA Y ALREDEDORES." },
+];
+export const OperationsData = [
+  {
+    name: "Av. San Juan 1896 - CABA",
+    imgs: {
+      before: [
+        {
+          title: "Fachada 1",
+          img: "/buildingMaintenanceAndRestorations/before/fachada1.png",
+        },
+      ],
+      after: [
+        {
+          title: "Fachada 1",
+          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada1.jpg",
+        },
+        {
+          title: "Fachada 2",
+          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada2.jpeg",
+        },
+        {
+          title: "Fachada 3",
+          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada3.jpg",
+        },
+        {
+          title: "Fachada 4",
+          img: "/buildingMaintenanceAndRestorations/after/restauracion-fachada4.jpg",
+        },
+      ],
+    },
+  },
 ];

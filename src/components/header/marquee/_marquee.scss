@@ -1,0 +1,45 @@
+@import "../../../assets/index.scss";
+.marquee {
+  background-color: $darkBlue;
+  height: 40px;
+  width: 300%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  &__content {
+    display: flex;
+    justify-content: flex-end;
+    width: 300%;
+    overflow: hidden;
+    background-color: $darkBlue;
+    &__text {
+      color: whitesmoke;
+      font-family: $fontRoboto;
+      font-size: x-large;
+      font-weight: 700;
+      text-shadow: 1px 1px 5px $blueLight;
+    }
+  }
+}
+
+.animate__animated.animate__slideOutLeft {
+  --animate-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-delay: 0ms;
+}
+
+/* DESKTOP························································································································ */
+@media (min-width: 1024px) {
+  .marquee {
+    width: 130%;
+    &__content {
+      width: 130%;
+    }
+  }
+  .animate__animated.animate__slideOutLeft {
+    --animate-duration: 10s;
+    // animation-iteration-count: infinite;
+    // animation-delay: 0ms;
+  }
+}

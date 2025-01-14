@@ -1,7 +1,7 @@
 import React from "react";
 import "./carouselPresentation.scss";
 import img1 from "../../../../assets/imgs/img1BigCarousel.png";
-import img2 from "../../../../assets/imgs/img2BigCarousel.jpg";
+import img2 from "../../../../assets/imgs/mantenimiento-y-restauraciones-edilicias.png";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const CarouselPresentation = () => {
@@ -44,14 +44,10 @@ const CarouselPresentation = () => {
             alt="imgHightRiseCleaning"
           />
           <div className="carousel-caption d-md-block carouselPresentation__body__container__texts">
-            <h5>SERVICIOS DE ALTURA</h5>
-            <p>
-              Poseemos un excelente equipo de Profesionales certificados y de
-              amplia experiencia dispuestos a colaborar para brindarle
-              soluciones practicas a esta problematica que se presenta.
-            </p>
+            <h5>MANTENIMIENTO Y RESTAURACIONES EDILICIAS</h5>
+            <p>HIDROLAVADOS - VIDRIOS - PINTURA - REPARACIONES.</p>
             <Link
-              to="/servicios-de-altura"
+              to="/mantenimiento-y-restauraciones-edilicias"
               className="text-decoration-none text-white"
             >
               <button

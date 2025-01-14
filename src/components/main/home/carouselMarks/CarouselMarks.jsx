@@ -25,7 +25,7 @@ const CarouselMarks = () => {
                     MarksData.indexOf(mark) <= 3 && (
                       <div className="col" key={MarksData.indexOf(mark)}>
                         <img
-                          src={config.imagenBase + mark.img}
+                          src={config.imageBase + mark.img}
                           className="text-white text-center carouselMarks__content__slider__container__imgs__img"
                           alt={mark.title}
                         />
@@ -42,7 +42,7 @@ const CarouselMarks = () => {
                     MarksData.indexOf(mark) <= 7 && (
                       <div className="col" key={MarksData.indexOf(mark)}>
                         <img
-                          src={config.imagenBase + mark.img}
+                          src={config.imageBase + mark.img}
                           className="text-white text-center carouselMarks__content__slider__container__imgs__img"
                           alt={mark.title}
                         />
@@ -59,7 +59,7 @@ const CarouselMarks = () => {
                     MarksData.indexOf(mark) <= 11 && (
                       <div className="col" key={MarksData.indexOf(mark)}>
                         <img
-                          src={config.imagenBase + mark.img}
+                          src={config.imageBase + mark.img}
                           className="text-white text-center carouselMarks__content__slider__container__imgs__img"
                           alt={mark.title}
                         />
@@ -76,7 +76,7 @@ const CarouselMarks = () => {
                     MarksData.indexOf(mark) <= 15 && (
                       <div className="col" key={MarksData.indexOf(mark)}>
                         <img
-                          src={config.imagenBase + mark.img}
+                          src={config.imageBase + mark.img}
                           className="text-white text-center carouselMarks__content__slider__container__imgs__img"
                           alt={mark.title}
                         />
@@ -93,7 +93,7 @@ const CarouselMarks = () => {
                     MarksData.indexOf(mark) <= 19 && (
                       <div className="col" key={MarksData.indexOf(mark)}>
                         <img
-                          src={config.imagenBase + mark.img}
+                          src={config.imageBase + mark.img}
                           className="text-white text-center carouselMarks__content__slider__container__imgs__img"
                           alt={mark.title}
                         />
@@ -110,7 +110,7 @@ const CarouselMarks = () => {
                     MarksData.indexOf(mark) <= 23 && (
                       <div className="col" key={MarksData.indexOf(mark)}>
                         <img
-                          src={config.imagenBase + mark.img}
+                          src={config.imageBase + mark.img}
                           className="text-white text-center carouselMarks__content__slider__container__imgs__img"
                           alt={mark.title}
                         />
@@ -127,7 +127,7 @@ const CarouselMarks = () => {
                     MarksData.indexOf(mark) <= 27 && (
                       <div className="col" key={MarksData.indexOf(mark)}>
                         <img
-                          src={config.imagenBase + mark.img}
+                          src={config.imageBase + mark.img}
                           className="text-white text-center carouselMarks__content__slider__container__imgs__img"
                           alt={mark.title}
                         />
@@ -144,7 +144,7 @@ const CarouselMarks = () => {
                     MarksData.indexOf(mark) <= 31 && (
                       <div className="col" key={MarksData.indexOf(mark)}>
                         <img
-                          src={config.imagenBase + mark.img}
+                          src={config.imageBase + mark.img}
                           className="text-white text-center carouselMarks__content__slider__container__imgs__img"
                           alt={mark.title}
                         />
