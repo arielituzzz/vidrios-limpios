@@ -7,6 +7,7 @@ import imgBackground from "../../../assets/imgs/mantenimiento-y-restauraciones-e
 import CarouselMaintenance from "./components/CarouselMaintenance";
 import { OperationsData } from "../../../assets/generators";
 import ImgBanner from "../../../assets/imgs/banner-mantenimiento.jpg";
+import SubscribersBanner from "./components/SubscribersBanner";
 
 const BuildingMaintenanceAndRestorations = () => {
   return (
@@ -17,6 +18,7 @@ const BuildingMaintenanceAndRestorations = () => {
         background={imgBackground}
       />
       <div className="buildingMaintenanceAndRestorations">
+        <SubscribersBanner />
         <div className="buildingMaintenanceAndRestorations__bannerContainer">
           <div className="buildingMaintenanceAndRestorations__bannerContainer__banner">
             <img src={ImgBanner} alt="banner-mantenimiento" className="w-100" />

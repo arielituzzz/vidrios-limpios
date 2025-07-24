@@ -8,11 +8,13 @@ import About from "./about/About";
 import Separator2 from "./separators/Separator2";
 import CarouselMarks from "./carouselMarks/CarouselMarks";
 import ContactUs from "./contact/Contact";
+import SubscribersModal from "./modal/SubscribersModal";
 
 const Home = () => {
   return (
     <div className="home">
       <Top />
+      <SubscribersModal />
       <CarouselPresentation />
       <Cards />
       <Separator1 />

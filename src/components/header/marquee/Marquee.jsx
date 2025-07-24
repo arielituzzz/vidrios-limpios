@@ -7,6 +7,7 @@ const Marquee = () => {
       <div className="marquee__content animate__animated animate__slideOutLeft">
         <div className="marquee__content__text">
           CONSULTE POR ABONOS ANUALES 2025!!!
+          {/* ABONADOS: planes de 6 MESES y hasta 12 cuotas fijas! */}
         </div>
       </div>
     </div>

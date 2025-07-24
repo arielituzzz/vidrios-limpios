@@ -68,13 +68,19 @@
     height: 90px;
     &__content {
       color: wheat;
-      width: 70%;
+      width: 80%;
       margin: 0px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       &__menu {
         &__links {
+          column-gap: clamp(1.25rem, 3vw, 2.5rem);
+
+          a {
+            font-size: clamp(0.85rem, 1.2vw, 1rem);
+          }
+
           &__button {
             background-color: $red;
           }
