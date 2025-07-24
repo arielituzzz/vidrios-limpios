@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.33106083.css",
-    "main.js": "/static/js/main.e8427d5d.js",
+    "main.css": "/static/css/main.283bf265.css",
+    "main.js": "/static/js/main.54e23611.js",
     "static/js/787.f53ff0d6.chunk.js": "/static/js/787.f53ff0d6.chunk.js",
     "static/media/distribuidora-thames.png": "/static/media/distribuidora-thames.a156a7ae8843622a06a9.png",
     "static/media/img1BigCarousel.png": "/static/media/img1BigCarousel.3c575c84934ffa28142d.png",
+    "static/media/mantenimiento-y-restauraciones-edilicias.png": "/static/media/mantenimiento-y-restauraciones-edilicias.70a8b9113807efc4aa79.png",
     "static/media/limpieza_de_vidrios_en_altura.png": "/static/media/limpieza_de_vidrios_en_altura.0bcc4e6e1662af998dc2.png",
-    "static/media/img2BigCarousel.jpg": "/static/media/img2BigCarousel.2cb48e5c9e87e474ebe4.jpg",
     "static/media/whatsappMain.png": "/static/media/whatsappMain.253865880bf4db39ad29.png",
+    "static/media/banner-mantenimiento.jpg": "/static/media/banner-mantenimiento.d41754b40bbfc4e53631.jpg",
     "static/media/logo.png": "/static/media/logo.188d6f29ecb9c9625ad9.png",
+    "static/media/mercadopago.png": "/static/media/mercadopago.5cb9dd3c324ab35acb1e.png",
     "index.html": "/index.html",
     "static/media/whatsapp.svg": "/static/media/whatsapp.32b03aeb6b888388cf5c2a1d3a11de1a.svg",
     "static/media/telemarketer.svg": "/static/media/telemarketer.a6b3b23d3d2ded5b360100506966113f.svg",
@@ -18,12 +20,12 @@
     "static/media/facebook-f.svg": "/static/media/facebook-f.6c41d5ff32da508237ab5f6493d7def6.svg",
     "static/media/check.svg": "/static/media/check.8ee2257388062d79888d.svg",
     "static/media/location.svg": "/static/media/location.2baaf41f45e8014ac0ba92e828846c5e.svg",
-    "main.33106083.css.map": "/static/css/main.33106083.css.map",
-    "main.e8427d5d.js.map": "/static/js/main.e8427d5d.js.map",
+    "main.283bf265.css.map": "/static/css/main.283bf265.css.map",
+    "main.54e23611.js.map": "/static/js/main.54e23611.js.map",
     "787.f53ff0d6.chunk.js.map": "/static/js/787.f53ff0d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33106083.css",
-    "static/js/main.e8427d5d.js"
+    "static/css/main.283bf265.css",
+    "static/js/main.54e23611.js"
   ]
 }
