@@ -89,8 +89,9 @@ export const MenuData = [
     link: "/servicios-de-altura",
   },
   {
-    title: "DISTRIBUIDOR OFICIAL 'CASA THAMES'",
+    title: "DISTRIBUIDOR OFICIAL",
     link: "/distribuidor-thames",
+    img: "casaThames.webp",
   },
   { title: "CONTACTO", link: "/" },
 ];

@@ -14,7 +14,6 @@ const Home = () => {
   return (
     <div className="home">
       <Top />
-      {/* <SubscribersModal /> */}
       <SubscribersBanner />
       <CarouselPresentation />
       <Cards />
