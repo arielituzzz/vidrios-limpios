@@ -14,11 +14,13 @@ const SubscribersBanner = () => {
         style={{ background: "linear-gradient(to right, #0d6efd, #0dcaf0)" }}
       >
         {/* Título principal del banner */}
-        <h1 className="display-4 fw-bold mb-3">SERVICIOS EN ALTURA</h1>
+        {/* <h1 className="display-4 fw-bold mb-3">SERVICIOS EN ALTURA</h1> */}
         {/* Subtítulo con la oferta, destacando "6 MESES" y "12 cuotas fijas" en amarillo (simulado con clase de Bootstrap) */}
         <p className="fs-3 fw-semibold">
-          Abonos hasta <span className="text-warning">6 MESES</span> fijos y
-          GRANDES OBRAS en <span className="text-warning">12 CUOTAS!!!</span>
+          Abonos hasta <span className="text-warning">6 MESES</span> fijos! Y
+          OBRAS/SERVICIOS en hasta{" "}
+          <span className="text-warning">12 CUOTAS </span>
+          fijas!
         </p>
 
         {/* Añadimos una sección para el método de pago */}
