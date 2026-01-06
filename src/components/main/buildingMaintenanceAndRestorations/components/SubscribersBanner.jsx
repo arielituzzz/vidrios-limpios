@@ -27,7 +27,7 @@ const SubscribersBanner = () => {
           style={{
             position: "absolute",
             bottom: "60px",
-            right: "40px",
+            right: "-10px",
             width: "150px",
             backgroundColor: "#dc3545", // Color Rojo
             color: "white",
