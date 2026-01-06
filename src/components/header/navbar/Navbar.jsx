@@ -51,15 +51,28 @@ const Navbar = ({ handleVisibility }) => {
                   onClick={() => scrollTo(item.title)}
                 >
                   <div className="column-gap-2 d-flex justify-content-evenly align-items-center p-1 text-center rounded-bottom-2 navbar__content__menu__links__button">
-                    {item.icon && (
+                    {/* {item.icon && (
                       <img
                         className="navbar__content__menu__links__icon"
                         src={config.imageBase + item.icon}
                         alt={item.title}
                       />
-                    )}
+                    )} */}
 
                     {item.title}
+                    {item.img && (
+                      <img
+                        src={config.imageBase + item.img}
+                        alt={item.title}
+                        style={{
+                          marginLeft: "8px",
+                          height: "clamp(30px, 4vw, 40px)",
+                          borderRadius: "8px",
+                          border: "2px solid #ddd",
+                          objectFit: "contain",
+                        }}
+                      />
+                    )}
                   </div>
                 </NavLink>
               );

@@ -5,7 +5,7 @@ const Signature = () => {
   return (
     <div className="signature">
       <div className="signature__copyright">
-        Copyright © 2023 - Todos los derechos reservados - Desarrollado por{" "}
+        Copyright © 2026 - Todos los derechos reservados - Desarrollado por{" "}
         <a
           href="mailto:info.sudevsolutions@gmail.com"
           className="signature__copyright__mailLink"
